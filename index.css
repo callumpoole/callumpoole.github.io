@@ -8,7 +8,16 @@ h1 {
 	height: 100vh;
 }
 
-
+#underCons {
+	position: absolute;
+	top: 100px;
+	left: 75vw;
+	text-align: center;
+	font-size: 30px;
+	transform: rotateZ(25deg);
+	font-family: "Lucida Console", serif;
+	text-decoration: underline;
+}
 
 .sidePanel {
 	position: absolute;
@@ -56,6 +65,7 @@ h1 {
 	color: white;
 	text-decoration:none; 
 	padding: 20px;
+	transform: translate( -50%, 0 );
 }
 
 
