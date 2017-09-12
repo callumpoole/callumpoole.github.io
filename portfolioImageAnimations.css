@@ -1,0 +1,27 @@
+
+#Village img{
+  -webkit-animation: VillageCycle 2s infinite; /* Safari 4+ */
+  -moz-animation:    VillageCycle 2s infinite; /* Fx 5+ */
+  -o-animation:      VillageCycle 2s infinite; /* Opera 12+ */
+  animation:         VillageCycle 2s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#Village:hover img{
+	animation-play-state: running; 
+}
+@-webkit-keyframes VillageCycle {
+  0%   { content:url("images/Proced6.png");}
+  50%  { content:url("images/Proced5.png");}
+}
+@-moz-keyframes VillageCycle {
+  0%   { content:url("images/Proced6.png");}
+  50%  { content:url("images/Proced5.png");}
+}
+@-o-keyframes VillageCycle {
+  0%   { content:url("images/Proced6.png");}
+  50%  { content:url("images/Proced5.png");}
+}
+@keyframes VillageCycle {
+  0%   { content:url("images/Proced6.png");}
+  50%  { content:url("images/Proced5.png");}
+}

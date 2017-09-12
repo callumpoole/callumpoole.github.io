@@ -26,7 +26,6 @@ background: #334;
 }
 
 
-
 .projBox img {
 	float: left;
 	display: inline-block;
@@ -64,3 +63,5 @@ background: #334;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+
