@@ -1,0 +1,23 @@
+.projBox {
+	background-color: red;
+	margin: 20px;
+}
+
+.projBox img {
+	float: left;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+}
+
+.projText{
+	float: left;
+}
+
+.projBox h2 {
+	margin: 0;
+}
+
+.projBox h4 {
+	margin: 0;
+}
