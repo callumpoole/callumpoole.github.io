@@ -1,27 +1,118 @@
 
 #Village img{
-  -webkit-animation: VillageCycle 2s infinite; /* Safari 4+ */
-  -moz-animation:    VillageCycle 2s infinite; /* Fx 5+ */
-  -o-animation:      VillageCycle 2s infinite; /* Opera 12+ */
-  animation:         VillageCycle 2s infinite; /* IE 10+, Fx 29+ */
+  -webkit-animation: VillageCycle 2.5s infinite; /* Safari 4+ */
+  -moz-animation:    VillageCycle 2.5s infinite; /* Fx 5+ */
+  -o-animation:      VillageCycle 2.5s infinite; /* Opera 12+ */
+  animation:         VillageCycle 2.5s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
 #Village:hover img{
 	animation-play-state: running; 
 }
 @-webkit-keyframes VillageCycle {
-  0%   { content:url("images/Proced6.png");}
-  50%  { content:url("images/Proced5.png");}
+  0%   { content:url("images/Medieval1.png");}
+  20%  { content:url("images/Medieval2.png");}
+  40%  { content:url("images/Medieval3.png");}
+  60%  { content:url("images/Medieval4.png");}
+  80%  { content:url("images/Medieval5.png");}
 }
 @-moz-keyframes VillageCycle {
-  0%   { content:url("images/Proced6.png");}
-  50%  { content:url("images/Proced5.png");}
+  0%   { content:url("images/Medieval1.png");}
+  20%  { content:url("images/Medieval2.png");}
+  40%  { content:url("images/Medieval3.png");}
+  60%  { content:url("images/Medieval4.png");}
+  80%  { content:url("images/Medieval5.png");}
 }
 @-o-keyframes VillageCycle {
-  0%   { content:url("images/Proced6.png");}
-  50%  { content:url("images/Proced5.png");}
+  0%   { content:url("images/Medieval1.png");}
+  20%  { content:url("images/Medieval2.png");}
+  40%  { content:url("images/Medieval3.png");}
+  60%  { content:url("images/Medieval4.png");}
+  80%  { content:url("images/Medieval5.png");}
 }
 @keyframes VillageCycle {
-  0%   { content:url("images/Proced6.png");}
-  50%  { content:url("images/Proced5.png");}
+  0%   { content:url("images/Medieval1.png");}
+  20%  { content:url("images/Medieval2.png");}
+  40%  { content:url("images/Medieval3.png");}
+  60%  { content:url("images/Medieval4.png");}
+  80%  { content:url("images/Medieval5.png");}
+}
+
+
+
+
+
+#WaterManagement img{
+  -webkit-animation: WaterManagementCycle 2.5s infinite; /* Safari 4+ */
+  -moz-animation:    WaterManagementCycle 2.5s infinite; /* Fx 5+ */
+  -o-animation:      WaterManagementCycle 2.5s infinite; /* Opera 12+ */
+  animation:         WaterManagementCycle 2.5s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#WaterManagement:hover img{
+	animation-play-state: running; 
+}
+@-webkit-keyframes WaterManagementCycle {
+  0%   { content:url("images/WaterManagement1.png");}
+  20%  { content:url("images/WaterManagement2.png");}
+  40%  { content:url("images/WaterManagement3.png");}
+  60%  { content:url("images/WaterManagement4.png");}
+  80%  { content:url("images/WaterManagement5.png");}
+}
+@-moz-keyframes WaterManagementCycle {
+  0%   { content:url("images/WaterManagement1.png");}
+  20%  { content:url("images/WaterManagement2.png");}
+  40%  { content:url("images/WaterManagement3.png");}
+  60%  { content:url("images/WaterManagement4.png");}
+  80%  { content:url("images/WaterManagement5.png");}
+}
+@-o-keyframes WaterManagementCycle {
+  0%   { content:url("images/WaterManagement1.png");}
+  20%  { content:url("images/WaterManagement2.png");}
+  40%  { content:url("images/WaterManagement3.png");}
+  60%  { content:url("images/WaterManagement4.png");}
+  80%  { content:url("images/WaterManagement5.png");}
+}
+@keyframes WaterManagementCycle {
+  0%   { content:url("images/WaterManagement1.png");}
+  20%  { content:url("images/WaterManagement2.png");}
+  40%  { content:url("images/WaterManagement3.png");}
+  60%  { content:url("images/WaterManagement4.png");}
+  80%  { content:url("images/WaterManagement5.png");}
+}
+
+
+#Pacman img{
+  -webkit-animation: PacmanCycle 2s infinite; /* Safari 4+ */
+  -moz-animation:    PacmanCycle 2s infinite; /* Fx 5+ */
+  -o-animation:      PacmanCycle 2s infinite; /* Opera 12+ */
+  animation:         PacmanCycle 2s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#Pacman:hover img{
+	animation-play-state: running; 
+}
+@-webkit-keyframes PacmanCycle {
+  0%   { content:url("images/Pacman1.png");}
+  25%  { content:url("images/Pacman2.png");}
+  50%  { content:url("images/Pacman3.png");}
+  75%  { content:url("images/Pacman4.png");}
+}
+@-moz-keyframes PacmanCycle {
+  0%   { content:url("images/Pacman1.png");}
+  25%  { content:url("images/Pacman2.png");}
+  50%  { content:url("images/Pacman3.png");}
+  75%  { content:url("images/Pacman4.png");}
+}
+@-o-keyframes PacmanCycle {
+  0%   { content:url("images/Pacman1.png");}
+  25%  { content:url("images/Pacman2.png");}
+  50%  { content:url("images/Pacman3.png");}
+  75%  { content:url("images/Pacman4.png");}
+}
+@keyframes PacmanCycle {
+  0%   { content:url("images/Pacman1.png");}
+  25%  { content:url("images/Pacman2.png");}
+  50%  { content:url("images/Pacman3.png");}
+  75%  { content:url("images/Pacman4.png");}
 }
