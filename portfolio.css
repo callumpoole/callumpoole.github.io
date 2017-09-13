@@ -19,10 +19,14 @@ background: #334;
 
 
 .projBox {
-	background-color: red;
+	background-color: #66D;
 	margin: 10px;
 	position: relative;
-	width: calc(100% - 40px);
+	/*width: calc(100% - 20px); */
+	border-radius: 15px;
+	font-family: "Verdana", serif;
+	width: calc(50% - 20px);
+	float: left;
 }
 
 
@@ -31,6 +35,7 @@ background: #334;
 	display: inline-block;
 	width: 150px;
 	height: 150px;
+	border-radius: 15px 0 0 15px;
 }
 
 .projText{
@@ -43,17 +48,26 @@ background: #334;
 
 .projBox h4 {
 	margin: 5px;
+	font-size: 13px;
 }
 
-.downloadButton { 
-	width: 150px;
-	height: 25px;
-	background-color: yellow;
+.downloadButtons{
 	position: absolute;
 	top: auto;
 	left: 160px;
 	bottom: 10px;
 	right: auto;
+}
+
+.downloadButton { 
+	width: auto;
+	height: 25px;
+	padding: 0 10px;
+	background-color: yellow;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	border-radius: 10px;
 }
 .downloadButton p {
 	margin: 0;
