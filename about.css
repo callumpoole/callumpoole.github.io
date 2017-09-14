@@ -1,0 +1,15 @@
+#SelfPic {
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	margin-right: 30px;
+	display: block;
+}
+
+
+#selfieWrapper {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+}

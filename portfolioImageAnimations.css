@@ -10,32 +10,32 @@
 	animation-play-state: running; 
 }
 @-webkit-keyframes VillageCycle {
-  0%   { content:url("images/Medieval1.png");}
-  20%  { content:url("images/Medieval2.png");}
-  40%  { content:url("images/Medieval3.png");}
-  60%  { content:url("images/Medieval4.png");}
-  80%  { content:url("images/Medieval5.png");}
+  0%   { content:url("images/Medieval1.jpg");}
+  20%  { content:url("images/Medieval2.jpg");}
+  40%  { content:url("images/Medieval3.jpg");}
+  60%  { content:url("images/Medieval4.jpg");}
+  80%  { content:url("images/Medieval5.jpg");}
 }
 @-moz-keyframes VillageCycle {
-  0%   { content:url("images/Medieval1.png");}
-  20%  { content:url("images/Medieval2.png");}
-  40%  { content:url("images/Medieval3.png");}
-  60%  { content:url("images/Medieval4.png");}
-  80%  { content:url("images/Medieval5.png");}
+  0%   { content:url("images/Medieval1.jpg");}
+  20%  { content:url("images/Medieval2.jpg");}
+  40%  { content:url("images/Medieval3.jpg");}
+  60%  { content:url("images/Medieval4.jpg");}
+  80%  { content:url("images/Medieval5.jpg");}
 }
 @-o-keyframes VillageCycle {
-  0%   { content:url("images/Medieval1.png");}
-  20%  { content:url("images/Medieval2.png");}
-  40%  { content:url("images/Medieval3.png");}
-  60%  { content:url("images/Medieval4.png");}
-  80%  { content:url("images/Medieval5.png");}
+  0%   { content:url("images/Medieval1.jpg");}
+  20%  { content:url("images/Medieval2.jpg");}
+  40%  { content:url("images/Medieval3.jpg");}
+  60%  { content:url("images/Medieval4.jpg");}
+  80%  { content:url("images/Medieval5.jpg");}
 }
 @keyframes VillageCycle {
-  0%   { content:url("images/Medieval1.png");}
-  20%  { content:url("images/Medieval2.png");}
-  40%  { content:url("images/Medieval3.png");}
-  60%  { content:url("images/Medieval4.png");}
-  80%  { content:url("images/Medieval5.png");}
+  0%   { content:url("images/Medieval1.jpg");}
+  20%  { content:url("images/Medieval2.jpg");}
+  40%  { content:url("images/Medieval3.jpg");}
+  60%  { content:url("images/Medieval4.jpg");}
+  80%  { content:url("images/Medieval5.jpg");}
 }
 
 
@@ -53,32 +53,32 @@
 	animation-play-state: running; 
 }
 @-webkit-keyframes WaterManagementCycle {
-  0%   { content:url("images/WaterManagement1.png");}
-  20%  { content:url("images/WaterManagement2.png");}
-  40%  { content:url("images/WaterManagement3.png");}
-  60%  { content:url("images/WaterManagement4.png");}
-  80%  { content:url("images/WaterManagement5.png");}
+  0%   { content:url("images/WaterManagement1.jpg");}
+  20%  { content:url("images/WaterManagement2.jpg");}
+  40%  { content:url("images/WaterManagement3.jpg");}
+  60%  { content:url("images/WaterManagement4.jpg");}
+  80%  { content:url("images/WaterManagement5.jpg");}
 }
 @-moz-keyframes WaterManagementCycle {
-  0%   { content:url("images/WaterManagement1.png");}
-  20%  { content:url("images/WaterManagement2.png");}
-  40%  { content:url("images/WaterManagement3.png");}
-  60%  { content:url("images/WaterManagement4.png");}
-  80%  { content:url("images/WaterManagement5.png");}
+  0%   { content:url("images/WaterManagement1.jpg");}
+  20%  { content:url("images/WaterManagement2.jpg");}
+  40%  { content:url("images/WaterManagement3.jpg");}
+  60%  { content:url("images/WaterManagement4.jpg");}
+  80%  { content:url("images/WaterManagement5.jpg");}
 }
 @-o-keyframes WaterManagementCycle {
-  0%   { content:url("images/WaterManagement1.png");}
-  20%  { content:url("images/WaterManagement2.png");}
-  40%  { content:url("images/WaterManagement3.png");}
-  60%  { content:url("images/WaterManagement4.png");}
-  80%  { content:url("images/WaterManagement5.png");}
+  0%   { content:url("images/WaterManagement1.jpg");}
+  20%  { content:url("images/WaterManagement2.jpg");}
+  40%  { content:url("images/WaterManagement3.jpg");}
+  60%  { content:url("images/WaterManagement4.jpg");}
+  80%  { content:url("images/WaterManagement5.jpg");}
 }
 @keyframes WaterManagementCycle {
-  0%   { content:url("images/WaterManagement1.png");}
-  20%  { content:url("images/WaterManagement2.png");}
-  40%  { content:url("images/WaterManagement3.png");}
-  60%  { content:url("images/WaterManagement4.png");}
-  80%  { content:url("images/WaterManagement5.png");}
+  0%   { content:url("images/WaterManagement1.jpg");}
+  20%  { content:url("images/WaterManagement2.jpg");}
+  40%  { content:url("images/WaterManagement3.jpg");}
+  60%  { content:url("images/WaterManagement4.jpg");}
+  80%  { content:url("images/WaterManagement5.jpg");}
 }
 
 
@@ -93,26 +93,26 @@
 	animation-play-state: running; 
 }
 @-webkit-keyframes PacmanCycle {
-  0%   { content:url("images/Pacman1.png");}
-  25%  { content:url("images/Pacman2.png");}
-  50%  { content:url("images/Pacman3.png");}
-  75%  { content:url("images/Pacman4.png");}
+  0%   { content:url("images/Pacman1.jpg");}
+  25%  { content:url("images/Pacman2.jpg");}
+  50%  { content:url("images/Pacman3.jpg");}
+  75%  { content:url("images/Pacman4.jpg");}
 }
 @-moz-keyframes PacmanCycle {
-  0%   { content:url("images/Pacman1.png");}
-  25%  { content:url("images/Pacman2.png");}
-  50%  { content:url("images/Pacman3.png");}
-  75%  { content:url("images/Pacman4.png");}
+  0%   { content:url("images/Pacman1.jpg");}
+  25%  { content:url("images/Pacman2.jpg");}
+  50%  { content:url("images/Pacman3.jpg");}
+  75%  { content:url("images/Pacman4.jpg");}
 }
 @-o-keyframes PacmanCycle {
-  0%   { content:url("images/Pacman1.png");}
-  25%  { content:url("images/Pacman2.png");}
-  50%  { content:url("images/Pacman3.png");}
-  75%  { content:url("images/Pacman4.png");}
+  0%   { content:url("images/Pacman1.jpg");}
+  25%  { content:url("images/Pacman2.jpg");}
+  50%  { content:url("images/Pacman3.jpg");}
+  75%  { content:url("images/Pacman4.jpg");}
 }
 @keyframes PacmanCycle {
-  0%   { content:url("images/Pacman1.png");}
-  25%  { content:url("images/Pacman2.png");}
-  50%  { content:url("images/Pacman3.png");}
-  75%  { content:url("images/Pacman4.png");}
+  0%   { content:url("images/Pacman1.jpg");}
+  25%  { content:url("images/Pacman2.jpg");}
+  50%  { content:url("images/Pacman3.jpg");}
+  75%  { content:url("images/Pacman4.jpg");}
 }
