@@ -24,8 +24,30 @@ h1 {
 	font-size: 30px;
 	transform: rotateZ(25deg);
 	font-family: "Lucida Console", serif;
-	text-decoration: underline;
+	-webkit-animation:   UnderConstructionCycle 2.5s infinite; /* Safari 4+ */
+    -moz-animation:    	 UnderConstructionCycle 2.5s infinite; /* Fx 5+ */
+    -o-animation:      	 UnderConstructionCycle 2.5s infinite; /* Opera 12+ */
+    animation:         	 UnderConstructionCycle 2.5s infinite; /* IE 10+, Fx 29+ */
+    animation-timing-function: ease-in-out;
 }
+
+
+
+@keyframes UnderConstructionCycle {
+  0%   { transform: rotateZ(25deg) scale(1,1);}
+  50%  { transform: rotateZ(25deg) scale(1.1,1.1);}
+  100% { transform: rotateZ(25deg) scale(1,1);}
+}
+
+
+
+
+
+
+
+
+
+
 
 .sidePanel {
 	position: absolute;

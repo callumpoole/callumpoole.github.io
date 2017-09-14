@@ -40,15 +40,19 @@ background: #334;
 
 .projText{
 	float: left;
+	width:     calc(100% - 150px);
 }
 
 .projBox h2 {
 	margin: 5px;
+	min-width: calc(100% - 5px);
+	width:     calc(100% - 5px);
+	font-size: 18px;
 }
 
 .projBox h4 {
 	margin: 5px;
-	font-size: 13px;
+	font-size: 10px;
 }
 
 .downloadButtons{

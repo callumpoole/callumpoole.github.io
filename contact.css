@@ -1,0 +1,27 @@
+#contact h1 {
+	font-family: "Lucida Console", serif;
+	font-size: 50px;
+	margin: 50px 0 20px;
+} 
+
+#contact h2 {
+	font-family: "Lucida Console", serif;
+	
+}
+
+
+#contact h3 {
+	font-family: "Lucida Console", serif;
+	font-size: 25px;
+	padding-left: 60px;
+} 
+
+#contactContent{
+	padding-left: 20px;
+}
+
+.contactWebsiteLogos {
+	width: 75px;
+	height: 75px;
+	margin-right: 20px;
+}
