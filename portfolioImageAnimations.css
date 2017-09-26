@@ -116,3 +116,52 @@
   50%  { content:url("images/Pacman3.jpg");}
   75%  { content:url("images/Pacman4.jpg");}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+#Switch img{
+  -webkit-animation: SwitchCycle 2s infinite; /* Safari 4+ */
+  -moz-animation:    SwitchCycle 2s infinite; /* Fx 5+ */
+  -o-animation:      SwitchCycle 2s infinite; /* Opera 12+ */
+  animation:         SwitchCycle 2s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#Switch:hover img{
+	animation-play-state: running; 
+}
+@-webkit-keyframes SwitchCycle {
+  0%   { content:url("images/Switch1.png");}
+  25%  { content:url("images/Switch2.png");}
+  50%  { content:url("images/Switch3.png");}
+  75%  { content:url("images/Switch4.png");}
+}
+@-moz-keyframes SwitchCycle {
+  0%   { content:url("images/Switch1.png");}
+  25%  { content:url("images/Switch2.png");}
+  50%  { content:url("images/Switch3.png");}
+  75%  { content:url("images/Switch4.png");}
+}
+@-o-keyframes SwitchCycle {
+  0%   { content:url("images/Switch1.png");}
+  25%  { content:url("images/Switch2.png");}
+  50%  { content:url("images/Switch3.png");}
+  75%  { content:url("images/Switch4.png");}
+}
+@keyframes SwitchCycle {
+  0%   { content:url("images/Switch1.png");}
+  25%  { content:url("images/Switch2.png");}
+  50%  { content:url("images/Switch3.png");}
+  75%  { content:url("images/Switch4.png");}
+}
+
+
+

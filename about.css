@@ -3,13 +3,28 @@
 	height: 300px;
 	margin: auto;
 	margin-right: 30px;
-	display: block;
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+	top: calc(50vh - 150px);
+	z-index: 3;
 }
 
 
 #selfieWrapper {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  height:100vh;
+	float: left;
+	display:flex;
+	
+	justify-content: center;
+	height:100vh;
+}
+
+.Vline {
+	float: left;
+    border-left: 2px solid #8ff;
+    height: 100vh;
+    display: inline-block;
+    box-shadow: 0px 0px 2px #0ff, 0px 0px 5px #0af;
+	position: absolute;
+	right: 209px;
 }
