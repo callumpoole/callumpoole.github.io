@@ -51,13 +51,13 @@ h1 {
 
 .sidePanel {
 	position: absolute;
-	width: 15%;
+	width: 150px; /*15%*/
 	height: 100vh;
 }
 .largerPanel {
 	position: absolute;
-	left: 15%;
-	width: 85%;
+	left: 150px;
+	width: calc(100% - 150px);
 	height: 100vh;
 }
 .sidePanel h1{
@@ -83,13 +83,14 @@ h1 {
 .fixNavArrows h1{
 	font-size: 50px;
 	padding: 50px;
-	margin: -30px 0 0 -50px;
+
+	margin: -30px 0 0 -90px;
 }  
 .fixNavArrows h1:nth-child(1){
-	transform: translate( 6.25vw, 0vh) rotateZ(-90deg)	
+	transform: translate( 75px, 0vh) rotateZ(-90deg)	
 }  
 .fixNavArrows h1:nth-child(2){
-	transform: translate( 6.25vw, calc(100vh - 200px )) rotateZ(-90deg)	
+	transform: translate( 75px, calc(100vh - 200px )) rotateZ(-90deg)	
 }  
 .fixNavArrows h1 a{
 	color: white;
