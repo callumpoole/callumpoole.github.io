@@ -55,6 +55,7 @@
 
 
 #SkillBars {
+	margin: 20px 0;
 	padding-left: 50px;
 }
 #SkillBars h2{
@@ -88,5 +89,23 @@ progress::-moz-progress-value {
 }
 progress::-webkit-progress-value {
   background: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+#about .scrollbox::-webkit-scrollbar-track {
+border: 1px solid #333;
+}
+
+#about .scrollbox::-webkit-scrollbar-thumb {
+background: #333;  
 }
 
