@@ -1,29 +1,30 @@
-.scrollbox {
-	margin: 10px;
-	width: calc(100% - 20px);
-	height: calc(100vh - 20px);
-	overflow: auto;
-}
-.scrollbox::-webkit-scrollbar {
-width: 8px;
-height: 8px;
+/*
+Colours:
+Dark:    	  	#1b2433
+Medium:			#1a3f52
+Ligher:			#365b6d
+
+*/
+
+
+
+
+#portfolio .scrollbox::-webkit-scrollbar-track {
+border: 1px solid #224;
 }
 
-.scrollbox::-webkit-scrollbar-track {
-border: 1px solid #334;
-}
-
-.scrollbox::-webkit-scrollbar-thumb {
-background: #334;  
+#portfolio .scrollbox::-webkit-scrollbar-thumb {
+background: #224;  
 }
 
 
 .projBox {
-	background-color: #66D;
+	color: #DDD;
+	background-color: #365b6d;
 	margin: 10px;
 	position: relative;
 	/*width: calc(100% - 20px); */
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	font-family: "Verdana", serif;
 	width: calc(50% - 20px);
 	float: left;
@@ -35,7 +36,7 @@ background: #334;
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	border-radius: 15px 0 0 15px;
+	/*border-radius: 15px 0 0 15px;*/
 }
 
 .projText{
@@ -71,7 +72,7 @@ background: #334;
 	position: relative;
 	float: left;
 	margin-right: 10px;
-	border-radius: 10px;
+	/*border-radius: 10px;*/
 }
 .downloadButton p {
 	margin: 0;
