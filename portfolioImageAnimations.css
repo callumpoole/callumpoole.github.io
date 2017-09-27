@@ -123,6 +123,50 @@
 
 
 
+#Pong img{
+  -webkit-animation: PongCycle 2.5s infinite; /* Safari 4+ */
+  -moz-animation:    PongCycle 2.5s infinite; /* Fx 5+ */
+  -o-animation:      PongCycle 2.5s infinite; /* Opera 12+ */
+  animation:         PongCycle 2.5s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#Pong:hover img{
+	animation-play-state: running; 
+}
+@-webkit-keyframes PongCycle {
+  0%   { content:url("images/Pong1.jpg");}
+  20%  { content:url("images/Pong2.jpg");}
+  40%  { content:url("images/Pong3.jpg");}
+  60%  { content:url("images/Pong4.jpg");}
+  80%  { content:url("images/Pong5.jpg");}
+}
+@-moz-keyframes PongCycle {
+  0%   { content:url("images/Pong1.jpg");}
+  20%  { content:url("images/Pong2.jpg");}
+  40%  { content:url("images/Pong3.jpg");}
+  60%  { content:url("images/Pong4.jpg");}
+  80%  { content:url("images/Pong5.jpg");}
+}
+@-o-keyframes PongCycle {
+  0%   { content:url("images/Pong1.jpg");}
+  20%  { content:url("images/Pong2.jpg");}
+  40%  { content:url("images/Pong3.jpg");}
+  60%  { content:url("images/Pong4.jpg");}
+  80%  { content:url("images/Pong5.jpg");}
+}
+@keyframes PongCycle {
+  0%   { content:url("images/Pong1.jpg");}
+  20%  { content:url("images/Pong2.jpg");}
+  40%  { content:url("images/Pong3.jpg");}
+  60%  { content:url("images/Pong4.jpg");}
+  80%  { content:url("images/Pong5.jpg");}
+}
+
+
+
+
+
+
 
 
 
