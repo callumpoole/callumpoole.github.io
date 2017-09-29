@@ -37,3 +37,23 @@ Ligher:			#0a7e07
 	height: 75px;
 	margin-right: 20px;
 }
+
+.hrBars {
+	width: 100px;
+	display: inline-block;
+	margin: 36px 10px;
+}
+
+
+#contact table{
+	padding-left: 60px;
+	font-family: "Lucida Console", serif;
+	font-size: 25px;
+	margin: 40px 0 20px;
+}
+#contact td {
+	padding-bottom: 20px;
+}
+
+
+
