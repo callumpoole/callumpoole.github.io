@@ -65,14 +65,18 @@ background: #224;
 }
 
 .downloadButton { 
+	color: white;
 	width: auto;
 	height: 25px;
 	padding: 0 10px;
-	background-color: yellow;
+	background-color: #1a3f52;
 	position: relative;
 	float: left;
 	margin-right: 10px;
 	/*border-radius: 10px;*/
+}
+.downloadButton:hover { 
+	background-color: #1b2433;
 }
 .downloadButton p {
 	margin: 0;
