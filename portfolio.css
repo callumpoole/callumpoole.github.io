@@ -23,13 +23,21 @@ background: #224;
 	background-color: #365b6d;
 	margin: 10px;
 	position: relative;
-	/*width: calc(100% - 20px); */
-	/*border-radius: 15px;*/
 	font-family: "Verdana", serif;
 	width: calc(50% - 20px);
 	float: left;
 }
 
+@media screen and (min-width: 1301px) {
+	.projBox {
+		width: calc(50% - 20px);
+	}
+}
+@media screen and (max-width: 1300px) {
+	.projBox {
+		width: calc(100% - 20px);
+	}
+}
 
 .projBox img {
 	float: left;
