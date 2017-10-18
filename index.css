@@ -207,6 +207,27 @@ h1 {
 	overflow: auto;
 }
 .scrollbox::-webkit-scrollbar {
-width: 8px;
-height: 8px;
+	width: 8px;
+	height: 8px;
 }
+
+
+/*
+Size Modes:		
+1) 1301 <= w
+2) 501 <= w <= 1300
+
+*/
+@media screen and (min-width: 1301px) {
+
+}
+@media screen and (max-width: 1300px) {
+
+}
+
+
+
+
+
+
+
