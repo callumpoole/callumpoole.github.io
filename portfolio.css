@@ -44,7 +44,17 @@ background: #224;
 	display: inline-block;
 	width: 150px;
 	height: 150px;
-	/*border-radius: 15px 0 0 15px;*/
+	z-index: 10;
+	opacity: .99;
+}
+
+#imageBackdrop {
+	width: 150px;
+	height: 100%;
+	background-color: #1b2433;
+	position: absolute;
+	z-index: 0;
+	
 }
 
 .projText{
@@ -62,6 +72,7 @@ background: #224;
 .projBox h4 {
 	margin: 5px;
 	font-size: 10px;
+	padding-bottom: 35px;
 }
 
 .downloadButtons{

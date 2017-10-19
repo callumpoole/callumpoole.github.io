@@ -75,7 +75,7 @@ Ligher:		#0a7e07  #366d4d
 
 @media screen and (orientation: portrait) {
 	#contactContent{
-		top: calc(50vh + 75px);
+		top: calc(50vh - 75px);
 		left: 50vw;
 	}
 }
