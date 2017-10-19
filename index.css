@@ -36,7 +36,7 @@ h1 {
 
 .sidePanel {
 	position: absolute;
-	width: 150px; /*15%*/
+	width: 150px; 
 	height: 100vh;
 }
 .largerPanel {
@@ -99,6 +99,10 @@ h1 {
 	.sidePanel h1{
 		transform: translate(-50%, -50%);
 	}
+	.largerPanel {
+		top: calc(150px);
+	}
+
 }
 
 
@@ -116,6 +120,7 @@ h1 {
 	bottom: 0;
 	left: 0;
 	right: 0; 
+	font-size: 1.5em;
 } 
 .mainImg img{
 	width: 300px;
@@ -155,7 +160,7 @@ h1 {
 }
 @media screen and (orientation: portrait) {
 	#intro h1 {
-		font-size: 3em
+		font-size: 3em;
 	}
 	.linkHolder {
 		font-size: 30px;
@@ -208,9 +213,7 @@ h1 {
 #contact1 h1{
 	color: white;
 }
-#pl100 {
-	padding-left: 100px;
-}
+
 
 
 .scrollbox {
@@ -224,17 +227,6 @@ h1 {
 	height: 8px;
 }
 
-@media screen and (orientation: portrait) {
-	#about {
-		top: calc(100vh + 150px);
-	}
-	#portfolio {
-		top: calc(200vh + 150px);
-	}
-	#contact {
-		top: calc(300vh + 150px);
-	}
-}
 
 
 /*
