@@ -98,6 +98,20 @@ h1 {
 	padding: 20px;
 	transform: translate( -50%, 0 );
 }
+@media screen and (orientation: portrait) {
+	.sidePanel {
+		visibility: hidden;
+		width: 0px; /*15%*/
+	}
+	.largerPanel {
+		width: 100%;
+		left: 0px;
+	}
+	.fixNavArrows {
+		visibility: hidden;
+	}
+}
+
 
 
 /* Intro */
@@ -150,7 +164,17 @@ h1 {
 .linkHolder a:hover{
 	text-decoration: underline;
 }
-
+@media screen and (orientation: portrait) {
+	#intro h1 {
+		font-size: 3em
+	}
+	.linkHolder {
+		font-size: 30px;
+	} 
+	.mainImg img {
+		transform: translate(-50%, -50%) scale(2,2); 
+	}
+}
 
 /* About */
 #about {
@@ -224,9 +248,13 @@ Size Modes:
 @media screen and (max-width: 1300px) {
 
 }
+@media screen and (orientation: landscape) {
 
+}
+@media screen and (orientation: portrait) {
 
-
+}
+ 
 
 
 
