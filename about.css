@@ -54,8 +54,9 @@
 	margin-left: 20px;
 	margin-bottom: 0;
 }
-#about2 h3{
+#about2 #personalDesc{
 	font-size: 20px;
+	margin-top: 8px;
 	margin-left: 20px; 
 	margin-right: 18%;
 }	
@@ -65,8 +66,9 @@
 
 
 #SkillBars {
-	margin: 20px 0;
+	margin: 0px 0;
 	padding-left: 20px;
+	margin-right: 18%;
 }
 #SkillBars h2{
 	color: white;
@@ -75,19 +77,46 @@
 	margin-bottom: 5px;
 	font-size: 16px;
 }
+#SkillBars h3{
+	margin: 0 0 4px;
+}
+#SkillBars p{
+	display: block;
+	margin: 4px 0 ;
+	CLEAR:BOTH;
+}
+#SkillBars section {
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+#SkillBars section:nth-child(1){
+	margin-top: 0px;
+}
+@media screen and (orientation: landscape) {
+	#SkillBars section:nth-child(2) {
+		margin-top: 0px;
+	}
+}
 
 #SkillBars progress[value] {
   /* Reset the default appearance */
   -webkit-appearance: none;
    appearance: none;
 
-  width: 500px;
+  width: 400px;
   height: 20px;
 }
 #SkillBars progress[value]::-webkit-progress-bar {
   background-color: #222;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+@media screen and (orientation: landscape) {
+	#SkillBars progress[value] {
+		width: 600px;
+		height: 20px;
+	}
 }
 
 progress {
