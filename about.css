@@ -112,7 +112,7 @@
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: portrait) {
 	#SkillBars progress[value] {
 		width: 600px;
 		height: 20px;
