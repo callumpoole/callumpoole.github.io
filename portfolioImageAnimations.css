@@ -1,12 +1,12 @@
 
-#Village img{
+#Village img.cycleAnim{
   -webkit-animation: VillageCycle 2.5s infinite; /* Safari 4+ */
   -moz-animation:    VillageCycle 2.5s infinite; /* Fx 5+ */
   -o-animation:      VillageCycle 2.5s infinite; /* Opera 12+ */
   animation:         VillageCycle 2.5s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
-#Village:hover img{
+#Village:hover img.cycleAnim{
 	animation-play-state: running; 
 }
 @-webkit-keyframes VillageCycle {
@@ -42,14 +42,14 @@
 
 
 
-#WaterManagement img{
+#WaterManagement img.cycleAnim{
   -webkit-animation: WaterManagementCycle 2.5s infinite; /* Safari 4+ */
   -moz-animation:    WaterManagementCycle 2.5s infinite; /* Fx 5+ */
   -o-animation:      WaterManagementCycle 2.5s infinite; /* Opera 12+ */
   animation:         WaterManagementCycle 2.5s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
-#WaterManagement:hover img{
+#WaterManagement:hover img.cycleAnim{
 	animation-play-state: running; 
 }
 @-webkit-keyframes WaterManagementCycle {
@@ -82,14 +82,14 @@
 }
 
 
-#Pacman img{
+#Pacman img.cycleAnim{
   -webkit-animation: PacmanCycle 2s infinite; /* Safari 4+ */
   -moz-animation:    PacmanCycle 2s infinite; /* Fx 5+ */
   -o-animation:      PacmanCycle 2s infinite; /* Opera 12+ */
   animation:         PacmanCycle 2s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
-#Pacman:hover img{
+#Pacman:hover img.cycleAnim{
 	animation-play-state: running; 
 }
 @-webkit-keyframes PacmanCycle {
@@ -123,14 +123,14 @@
 
 
 
-#Pong img{
+#Pong img.cycleAnim{
   -webkit-animation: PongCycle 2.5s infinite; /* Safari 4+ */
   -moz-animation:    PongCycle 2.5s infinite; /* Fx 5+ */
   -o-animation:      PongCycle 2.5s infinite; /* Opera 12+ */
   animation:         PongCycle 2.5s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
-#Pong:hover img{
+#Pong:hover img.cycleAnim{
 	animation-play-state: running; 
 }
 @-webkit-keyframes PongCycle {
@@ -172,14 +172,14 @@
 
 
 
-#Switch img{
+#Switch img.cycleAnim{
   -webkit-animation: SwitchCycle 2s infinite; /* Safari 4+ */
   -moz-animation:    SwitchCycle 2s infinite; /* Fx 5+ */
   -o-animation:      SwitchCycle 2s infinite; /* Opera 12+ */
   animation:         SwitchCycle 2s infinite; /* IE 10+, Fx 29+ */
   animation-play-state: paused;
 }
-#Switch:hover img{
+#Switch:hover img.cycleAnim{
 	animation-play-state: running; 
 }
 @-webkit-keyframes SwitchCycle {
