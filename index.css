@@ -121,6 +121,7 @@ h1 {
 	left: 0;
 	right: 0; 
 	font-size: 1.5em;
+	z-index: 10;
 } 
 .mainImg img{
 	width: 300px;
@@ -133,6 +134,7 @@ h1 {
 	top: 50%;
 	left: 50%; 
 	transform: translate(-50%, -50%); 
+	z-index: 10;
 }
 .linkHolder {
 	position: absolute;
@@ -147,6 +149,7 @@ h1 {
 	
 	margin: 0px auto;
 	font-size: 20px;
+	z-index: 10;
 } 
 .linkHolder a{
 	color: black;
@@ -168,6 +171,15 @@ h1 {
 	.mainImg img {
 		transform: translate(-50%, -50%) scale(2,2); 
 	}
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+	background-color: #DDD;
+}
+svg{
+	position:absolute; top: 0; left: 0;
 }
 
 /* About */

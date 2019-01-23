@@ -3,8 +3,7 @@ var skipIds = ["#intro", "#about", "#portfolio", "#contact"];
 
 $(window).scroll(function() { 
 	var currentScroll = $(window).scrollTop();
-	var h = $(window).height();
-	console.log("curS: " + currentScroll + ", h:" + h);
+	var h = $(window).height(); 
 	
 	//Move arrows 
     if (currentScroll >= h) {

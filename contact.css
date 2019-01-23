@@ -77,6 +77,7 @@ Ligher:		#0a7e07  #366d4d
 	#contactContent{
 		top: calc(50vh - 75px);
 		left: 50vw;
+		transform: translate(-50%, -50%) scale(1.5);
 	}
 }
 
