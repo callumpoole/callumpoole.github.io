@@ -9,6 +9,13 @@
 h1 {
 	font-family: "Lucida Console", serif;
 } 
+
+h2 {
+	color: #DDD;
+	font-family: "Verdana", serif;
+	margin: 10px;
+}
+
 .page_section {
 	position: absolute; 
 	left:0;
