@@ -1,0 +1,60 @@
+
+.halfLargePanel
+{
+	width: 50%;
+	height: 100vh;
+	float: left;
+	position: relative;
+	top: 0;
+}
+
+#aboutBubbles
+{
+	background-color: red;
+}
+
+.aboutBubble
+{
+	--aboutBubbleMargin: 30px;
+	--aboutBubbleWidth: 70%;
+	background-color: purple;
+	position: absolute;
+	width: var(--aboutBubbleWidth);
+	height: calc((100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3)));
+	left: var(--aboutBubbleMargin);
+	border-radius: 50px 0 50px 0;
+}
+.aboutBubble img
+{
+	display: block;
+	margin: 30px 0 30px 30px;
+	height: calc(100% - 60px);
+	float: left;
+}
+.aboutBubble div
+{
+	float: left;
+	height: calc(100% - 60px);
+	width: 50%;
+	margin: 30px 0 30px 30px;
+}
+#bubbleMe
+{
+	top: var(--aboutBubbleMargin);
+}
+#bubbleRingZero
+{
+	/*top: calc(var(--aboutBubbleMargin) * 2 + (100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3)));*/
+	top: calc(var(--aboutBubbleMargin) * (2 / 3) + (100vh / 3));
+	left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin));
+}
+#bubbleUniversity
+{
+	/*top: calc(var(--aboutBubbleMargin) * 3 + 2 * ((100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3))));*/
+	top: calc(var(--aboutBubbleMargin) / 3 + (100vh / 1.5));
+}
+
+#aboutSkills
+{
+	background-color: blue;
+}
