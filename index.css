@@ -6,6 +6,14 @@
    clear: both;
 }
 
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+
 h1 {
 	font-family: "Lucida Console", serif;
 } 
@@ -98,7 +106,8 @@ h2 {
 	.largerPanel {
 		width: 100%;
 		left: 0px;
-		height: calc(100vh - 150px);
+		/*height: calc(100vh - 150px);*/
+		height: auto;
 	}
 	.fixNavArrows {
 		visibility: hidden;
@@ -190,14 +199,28 @@ svg{
 }
 
 /* About */
+/*Purple Colour Palette:
+Lightest to Darkest
+#ab00ff
+#8300c4
+#4c00a4
+#33007b
+#31004a
+
+Purple Colour Palette 2:
+Lightest to Darkest
+#281b33
+#291a52
+#44366d
+*/
 #about {
 	top: 100vh;
 }
 #about1 { 
-	background-color: #222;
+	background-color: #281b33;
 }
 #about2{
-	background-color: #444;
+	background-color: #291a52;
 }
 #about1 h1{
 	color: white;
@@ -250,7 +273,7 @@ svg{
 
 /*
 Size Modes:		
-1) 1301 <= w
+1) 1301 >= w
 2) 501 <= w <= 1300
 
 */
