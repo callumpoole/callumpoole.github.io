@@ -50,36 +50,27 @@
 	max-height: var(--aboutBubbleHeightWithPadding);
 	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
 	/*border-radius: 50px 0 50px 0;*/
-	display: -ms-grid;
-	display: grid;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	color: white;
 	padding: var(--aboutBubblePadding);
 }
 .aboutBubble img
 {
-	/*margin: 30px;*/
 	height: 100%;
 }
 .aboutBubble div
 {
-	/*margin: 30px;*/
-	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
-	align-self: center;
-	-ms-grid-column-align: stretch;
-	justify-self: stretch;
 	overflow: hidden;
+	flex-grow: 1;
 }
 #bubbleMe
 {
 }
 #bubbleRingZero
 {
-	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin));
-	-ms-grid-columns: auto var(--aboutBubbleHeight);
-	grid-template-columns: auto var(--aboutBubbleHeight);
-	-ms-grid-rows: auto;
-	grid-template-rows: auto;
+	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin) - var(--aboutBubblePadding) * 2);
 }
 /*
 @media screen and (orientation: portrait)
@@ -90,74 +81,28 @@
 	}
 }
 */
-#bubbleRingZero > *:nth-child(1)
-{
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-}
-#bubbleRingZero > *:nth-child(2)
-{
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
-}
 #bubbleRingZero img
 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
+	margin-left: var(--aboutBubblePadding);
 }
 #bubbleRingZero div
 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    margin: 30px 0 30px 30px;
+    
 }
 #bubbleUniversity
 {
-	margin: var(--aboutBubbleMargin);
+	
 }
 #bubbleMe, #bubbleUniversity
 {
-	-ms-grid-columns: var(--aboutBubbleHeight) auto;
-	grid-template-columns: var(--aboutBubbleHeight) auto;
-	-ms-grid-rows: auto;
-	grid-template-rows: auto;
-}
-#bubbleMe > *:nth-child(1), #bubbleUniversity > *:nth-child(1)
-{
-	-ms-grid-row: 1;
-	-ms-grid-column: 1;
-}
-#bubbleMe > *:nth-child(2), #bubbleUniversity > *:nth-child(2)
-{
-	-ms-grid-row: 1;
-	-ms-grid-column: 2;
 }
 #bubbleMe img, #bubbleUniversity img
 {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
+	margin-right: var(--aboutBubblePadding);
 }
 #bubbleMe div, #bubbleUniversity div
 {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    margin: 30px 30px 30px 0;
+
 }
 
 /* --- SKILLS PANEL --- */
