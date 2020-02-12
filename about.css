@@ -33,33 +33,36 @@
 
 #aboutBubbles
 {
-	
+	display: flex;
+	flex-direction: column;
 }
 .aboutBubble
 {
 	--aboutBubbleMargin: 30px;
+	--aboutBubblePadding: 30px;
 	--aboutBubbleWidth: 70%;
-	--aboutBubbleHeight: calc((100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3)));
+	--aboutBubbleHeight: calc((100% / 3) - (var(--aboutBubbleMargin) * (4 / 3)));
+	--aboutBubbleHeightWithPadding: calc(var(--aboutBubbleHeight) - var(--aboutBubblePadding) * 2);
 	background-color: #44366d;
-	position: absolute;
 	width: var(--aboutBubbleWidth);
 	max-width: var(--aboutBubbleWidth);
-	height: var(--aboutBubbleHeight);
-	max-height: var(--aboutBubbleHeight);
-	left: var(--aboutBubbleMargin);
+	height: var(--aboutBubbleHeightWithPadding);
+	max-height: var(--aboutBubbleHeightWithPadding);
+	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
 	/*border-radius: 50px 0 50px 0;*/
 	display: -ms-grid;
 	display: grid;
 	color: white;
+	padding: var(--aboutBubblePadding);
 }
 .aboutBubble img
 {
-	margin: 30px;
-	height: calc(100% - 60px);
+	/*margin: 30px;*/
+	height: 100%;
 }
 .aboutBubble div
 {
-	margin: 30px;
+	/*margin: 30px;*/
 	-ms-flex-item-align: center;
 	-ms-grid-row-align: center;
 	align-self: center;
@@ -69,18 +72,24 @@
 }
 #bubbleMe
 {
-	top: var(--aboutBubbleMargin);
 }
 #bubbleRingZero
 {
-	/*top: calc(var(--aboutBubbleMargin) * 2 + (100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3)));*/
-	top: calc(var(--aboutBubbleMargin) * (2 / 3) + (100vh / 3));
-	left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin));
+	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin));
 	-ms-grid-columns: auto var(--aboutBubbleHeight);
 	grid-template-columns: auto var(--aboutBubbleHeight);
 	-ms-grid-rows: auto;
 	grid-template-rows: auto;
 }
+/*
+@media screen and (orientation: portrait)
+{
+	#bubbleRingZero
+	{
+		margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
+	}
+}
+*/
 #bubbleRingZero > *:nth-child(1)
 {
 	-ms-grid-row: 1;
@@ -112,8 +121,7 @@
 }
 #bubbleUniversity
 {
-	/*top: calc(var(--aboutBubbleMargin) * 3 + 2 * ((100vh / 3) - (var(--aboutBubbleMargin) * (4 / 3))));*/
-	top: calc(var(--aboutBubbleMargin) / 3 + (100vh / 1.5));
+	margin: var(--aboutBubbleMargin);
 }
 #bubbleMe, #bubbleUniversity
 {
@@ -161,12 +169,23 @@
 #toolBelt
 {
 	text-align: center;
-	margin: 0 auto 20px;
+	margin: 20px auto 0;
 	color: white;
 }
 #allSkillContainers
 {
 	padding: 30px 30px 30px 0;
+}
+@media screen and (orientation: portrait)
+{
+	#allSkillContainers
+	{
+		padding: 0 30px 30px 30px;
+	}
+	#toolBelt
+	{
+		margin: 0 auto 20px;
+	}
 }
 .skillContainer
 {
