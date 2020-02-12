@@ -1,4 +1,25 @@
-#about2 {
+/*
+Colours:
+Dark:    	#281b33
+Medium:		#291a52
+Light:		#44366d
+*/
+
+:root {
+	--AboutColDark: #281b33;
+	--AboutColMedium: #291a52;
+	--AboutColLight: #44366d;
+}
+
+
+#about {
+	
+}
+#about1 { 
+	background-color: var(--AboutColDark);
+}
+#about2{
+	background-color: var(--AboutColMedium);
 	display: flex;
 }
 
@@ -71,6 +92,14 @@
 	margin-right: var(--aboutBubblePadding);
 }
 
+@media screen and (max-width: 1300px) and (orientation: landscape) {
+	.aboutBubble
+	{
+		margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
+		width: auto;
+	}
+}
+
 /* --- SKILLS PANEL --- */
 
 #aboutSkills {}
@@ -116,13 +145,14 @@
 }
 
 progress {
-  color: #281b33;
-  background: #44366d;
+  color: var(--AboutColDark);
+  background: var(--AboutColLight);
 }
-progress::progress-value 		 { background: #281b33; }
-progress::-moz-progress-value 	 { background: #281b33; }
-progress::-webkit-progress-value { background: #281b33; }
-progress::progress-bar 			 { background: #44366d; }
-progress::-moz-progress-bar 	 { background: #44366d; }
-progress::-webkit-progress-bar 	 { background: #44366d; }
+progress::progress-value 		 { background: var(--AboutColDark); }
+progress::-moz-progress-value 	 { background: var(--AboutColDark); }
+progress::-webkit-progress-value { background: var(--AboutColDark); }
+progress::progress-bar 			 { background: var(--AboutColLight); }
+progress::-moz-progress-bar 	 { background: var(--AboutColLight); }
+progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
+
 
