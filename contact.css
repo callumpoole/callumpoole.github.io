@@ -1,43 +1,45 @@
 /*
-Colours:    old      new
-Dark:    	#0d5302  #1b332c
-Medium:		#056f00  #1a5233
-Ligher:		#0a7e07  #366d4d
+Colours:
+Dark:    	#1b332c
+Medium:		#1a5233
+Light:		#366d4d
 */
 
-#contact2 {
+:root {
+	--ContactColDark: #1b332c;
+	--ContactColMedium: #1a5233;
+	--ContactColLight: #366d4d;
+}
+
+ /* Contact Me */
+#contact {
+	
+}
+#contact1 { 
+	background-color: var(--ContactColDark);
+}
+#contact2{
+	background-color: var(--ContactColMedium);
 	display: flex;
 	align-items: center;
 	align-content: center;
 }
-
-
-#contact {
-	color: #ddd;
-}
-
-#contact h1 {
-	color: #fff;
-	font-family: "Lucida Console", serif;
+#contact2 h1
+{
 	font-size: 50px;
-	display: block;
-	text-align: center;
-} 
-
-#contact h2 {
+}
+#contact2 h1, #contact2 h2, #contact h3 {
 	font-family: "Lucida Console", serif;
 	display: block;
 	text-align: center;
 }
-
-
 #contact h3 {
-	font-family: "Lucida Console", serif;
 	font-size: 25px;
 	padding-left: 60px;
 } 
 
 #contactContent{
+	color: #ddd;
 	display: inline-block;
 	margin: 0 auto;
 }
