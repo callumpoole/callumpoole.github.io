@@ -10,11 +10,11 @@ Ligher:			#365b6d
 
 
 #portfolio .scrollbox::-webkit-scrollbar-track {
-border: 1px solid #224;
+	border: 1px solid #224;
 }
 
 #portfolio .scrollbox::-webkit-scrollbar-thumb {
-background: #224;  
+	background: #224;  
 }
 
 

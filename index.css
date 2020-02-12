@@ -120,7 +120,17 @@ body{
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	justify-content: space-evenly;
+	/* IE11: doesn't support space-evenly. */
+	justify-content: space-around;
+}
+@supports (justify-content: space-evenly) {
+	/*If Not Edge. Edge thinks it can support it, but it can't*/
+	@supports not (-ms-ime-align:auto) {
+		#intro {
+			/* Use space-evenly if supported. */
+			justify-content: space-evenly;
+		}
+	}
 }
 #intro h1 {
 	display: block;
@@ -216,7 +226,8 @@ Lightest to Darkest
 .scrollbox {
 	margin: 10px;
 	width: calc(100% - 20px);
-	height: calc(100vh - 20px);
+	height: auto;
+	max-height: calc(100vh - 20px);
 	overflow: auto;
 }
 .scrollbox::-webkit-scrollbar {

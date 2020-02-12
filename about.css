@@ -1,43 +1,42 @@
-#about2
-{
+#about2 {
 	display: flex;
 }
 
-.halfLargePanel
-{
+.halfLargePanel {
 	width: 50%;
 	height: 100vh;
-	/*float: left;*/
 	position: relative;
 	display: block;
 	top: 0;
 }
 
 @media screen and (orientation: portrait) {
-	#about2
-	{
+	#about2 {
 		flex-direction: column;
 	}
-	.halfLargePanel
-	{
+	.halfLargePanel {
 		width: 100%;
 		height: 50vh;
 		position: relative;
 		top: 0;
-	}	
+	}
+	#aboutBubbles {
+		height: 50vh;
+	}
+	#aboutSkills {
+		height: auto;
+	}
 }	
 
 /* --- BUBBLES PANEL --- */
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-#aboutBubbles
-{
+#aboutBubbles {
 	display: flex;
 	flex-direction: column;
 }
-.aboutBubble
-{
+.aboutBubble {
 	--aboutBubbleMargin: 30px;
 	--aboutBubblePadding: 30px;
 	--aboutBubbleWidth: 70%;
@@ -49,105 +48,61 @@
 	height: var(--aboutBubbleHeightWithPadding);
 	max-height: var(--aboutBubbleHeightWithPadding);
 	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
-	/*border-radius: 50px 0 50px 0;*/
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	color: white;
 	padding: var(--aboutBubblePadding);
 }
-.aboutBubble img
-{
+.aboutBubble img {
 	height: 100%;
 }
-.aboutBubble div
-{
+.aboutBubble div {
 	overflow: hidden;
 	flex-grow: 1;
 }
-#bubbleMe
-{
-}
-#bubbleRingZero
-{
+#bubbleRingZero {
 	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin) - var(--aboutBubblePadding) * 2);
 }
-/*
-@media screen and (orientation: portrait)
-{
-	#bubbleRingZero
-	{
-		margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
-	}
-}
-*/
-#bubbleRingZero img
-{
+#bubbleRingZero img {
 	margin-left: var(--aboutBubblePadding);
 }
-#bubbleRingZero div
-{
-    
-}
-#bubbleUniversity
-{
-	
-}
-#bubbleMe, #bubbleUniversity
-{
-}
-#bubbleMe img, #bubbleUniversity img
-{
+#bubbleMe img, #bubbleUniversity img {
 	margin-right: var(--aboutBubblePadding);
-}
-#bubbleMe div, #bubbleUniversity div
-{
-
 }
 
 /* --- SKILLS PANEL --- */
 
-#aboutSkills
-{
-	/*background-color: blue;*/
-}
-#toolBelt
-{
+#aboutSkills {}
+#toolBelt {
 	text-align: center;
 	margin: 20px auto 0;
 	color: white;
 }
-#allSkillContainers
-{
+#allSkillContainers {
 	padding: 30px 30px 30px 0;
 }
-@media screen and (orientation: portrait)
-{
-	#allSkillContainers
-	{
+@media screen and (orientation: portrait) {
+	#allSkillContainers {
 		padding: 0 30px 30px 30px;
 	}
-	#toolBelt
-	{
+	#toolBelt {
 		margin: 0 auto 20px;
 	}
 }
-.skillContainer
-{
+.skillContainer {
 	width: 50%;
 	/*background-color: red;*/
 	float: left;
 	margin: 0 0 10px;
 }
-.skillContainer img
-{
+.skillContainer img {
 	width: 80px;
 	float: left;
 	position: relative;
 	z-index: 2;
 }
-.skillContainer progress[value]
-{
+.skillContainer progress[value] {
 	float: left;
 	position: relative;
 	height: 20px;
