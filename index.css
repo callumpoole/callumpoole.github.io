@@ -62,25 +62,24 @@ h2 {
 }
 
 /* NavArrows */
-.fixNavArrows {
+#fixedNavArrows {
 	position: absolute;
 	top: 100vh;
 	z-index: 100;
 	left: 0;
 }
-.fixNavArrows h1{
+#fixedNavArrows h1{
 	font-size: 50px;
 	padding: 50px;
-
 	margin: -30px 0 0 -90px;
 }  
-.fixNavArrows h1:nth-child(1){
+#fixedNavArrows h1:nth-child(1){
 	transform: translate( 75px, 0vh) rotateZ(-90deg);
 }  
-.fixNavArrows h1:nth-child(2){
+#fixedNavArrows h1:nth-child(2){
 	transform: translate( 75px, calc(100vh - 200px )) rotateZ(-90deg);
 }  
-.fixNavArrows h1 a{
+#fixedNavArrows h1 a{
 	color: white;
 	text-decoration:none; 
 	padding: 20px;
@@ -92,7 +91,7 @@ h2 {
 		height: auto;
 	}
 	.headerPanel {
-		width: 100vw; 
+		width: 100%; 
 		min-height: 150px;
 		max-height: 150px;
 	}
@@ -101,7 +100,7 @@ h2 {
 		left: 0px;
 		height: auto;
 	}
-	.fixNavArrows {
+	#fixedNavArrows {
 		visibility: hidden;
 	}
 	.headerPanel h1{
