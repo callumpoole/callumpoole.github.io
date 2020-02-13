@@ -15,10 +15,10 @@ Light:		#365b6d
 #portfolio {
 	
 }
-#portfolio1 { 
+#portfolioHeader { 
 	background-color: var(--PortfolioColDark);
 }
-#portfolio2{
+#portfolioBody{
 	background-color: var(--PortfolioColMedium);
 }
 

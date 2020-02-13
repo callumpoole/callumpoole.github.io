@@ -15,10 +15,10 @@ Light:		#44366d
 #about {
 	
 }
-#about1 { 
+#aboutHeader { 
 	background-color: var(--AboutColDark);
 }
-#about2{
+#aboutBody{
 	background-color: var(--AboutColMedium);
 	display: flex;
 }
@@ -32,7 +32,7 @@ Light:		#44366d
 }
 
 @media screen and (orientation: portrait) {
-	#about2 {
+	#aboutBody {
 		flex-direction: column;
 	}
 	.halfLargePanel {
