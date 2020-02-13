@@ -15,20 +15,20 @@ Light:		#366d4d
 #contact {
 	
 }
-#contact1 { 
+#contactHeader { 
 	background-color: var(--ContactColDark);
 }
-#contact2{
+#contactBody{
 	background-color: var(--ContactColMedium);
 	display: flex;
 	align-items: center;
 	align-content: center;
 }
-#contact2 h1
+#contactBody h1
 {
 	font-size: 50px;
 }
-#contact2 h1, #contact2 h2, #contact h3 {
+#contactBody h1, #contactBody h2, #contact h3 {
 	font-family: "Lucida Console", serif;
 	display: block;
 	text-align: center;

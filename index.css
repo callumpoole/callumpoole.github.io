@@ -39,18 +39,18 @@ h2 {
 	flex-direction: row;
 }
 
-.sidePanel {
+.headerPanel {
 	display: flex;
 	align-content: center;
 	align-items: center;
 	width: 150px; 
 	height: 100vh;
 }
-.largerPanel {
+.bodyPanel {
 	width: calc(100% - 150px);
 	height: 100vh;
 }
-.sidePanel h1{
+.headerPanel h1{
 	color: white;
 	margin:0;
 	white-space: nowrap;
@@ -91,12 +91,12 @@ h2 {
 		flex-direction: column;
 		height: auto;
 	}
-	.sidePanel {
+	.headerPanel {
 		width: 100vw; 
 		min-height: 150px;
 		max-height: 150px;
 	}
-	.largerPanel {
+	.bodyPanel {
 		width: 100%;
 		left: 0px;
 		height: auto;
@@ -104,7 +104,7 @@ h2 {
 	.fixNavArrows {
 		visibility: hidden;
 	}
-	.sidePanel h1{
+	.headerPanel h1{
 		transform: translate(-50%, 0);
 	}
 }
@@ -138,8 +138,3 @@ Size Modes:
 @media screen and (orientation: portrait) {
 
 }
- 
-
-
-
-
