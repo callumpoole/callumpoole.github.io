@@ -9,8 +9,8 @@ Light:		#44366d
 	--AboutColDark: #281b33;
 	--AboutColMedium: #291a52;
 	--AboutColLight: #44366d;
+	--aboutBodyPadding: 30px;
 }
-
 
 #about {
 	
@@ -21,6 +21,7 @@ Light:		#44366d
 #aboutBody{
 	background-color: var(--AboutColMedium);
 	display: flex;
+	padding: 30px;
 }
 
 .halfLargePanel {
@@ -31,24 +32,6 @@ Light:		#44366d
 	top: 0;
 }
 
-@media screen and (orientation: portrait) {
-	#aboutBody {
-		flex-direction: column;
-	}
-	.halfLargePanel {
-		width: 100%;
-		height: 50vh;
-		position: relative;
-		top: 0;
-	}
-	#aboutBubbles {
-		height: 50vh;
-	}
-	#aboutSkills {
-		height: auto;
-	}
-}	
-
 /* --- BUBBLES PANEL --- */
 
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
@@ -58,17 +41,16 @@ Light:		#44366d
 	flex-direction: column;
 }
 .aboutBubble {
-	--aboutBubbleMargin: 30px;
 	--aboutBubblePadding: 30px;
 	--aboutBubbleWidth: 70%;
-	--aboutBubbleHeight: calc((100% / 3) - (var(--aboutBubbleMargin) * (4 / 3)));
+	--aboutBubbleHeight: calc((100% / 3) - (var(--aboutBodyPadding) * (4 / 3)));
 	--aboutBubbleHeightWithPadding: calc(var(--aboutBubbleHeight) - var(--aboutBubblePadding) * 2);
 	background-color: #44366d;
 	width: var(--aboutBubbleWidth);
 	max-width: var(--aboutBubbleWidth);
 	height: var(--aboutBubbleHeightWithPadding);
 	max-height: var(--aboutBubbleHeightWithPadding);
-	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
+	margin: 0 0 var(--aboutBodyPadding);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -83,21 +65,13 @@ Light:		#44366d
 	flex-grow: 1;
 }
 #bubbleRingZero {
-	margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 calc(100% - var(--aboutBubbleWidth) - var(--aboutBubbleMargin) - var(--aboutBubblePadding) * 2);
+	margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding) - var(--aboutBubblePadding) * 2);
 }
-#bubbleRingZero img {
-	margin-left: var(--aboutBubblePadding);
+#bubbleUniversity {
+	margin-bottom: 0; 
 }
-#bubbleMe img, #bubbleUniversity img {
+.aboutBubble > :first-child {
 	margin-right: var(--aboutBubblePadding);
-}
-
-@media screen and (max-width: 1300px) and (orientation: landscape) {
-	.aboutBubble
-	{
-		margin: var(--aboutBubbleMargin) var(--aboutBubbleMargin) 0 var(--aboutBubbleMargin);
-		width: auto;
-	}
 }
 
 /* --- SKILLS PANEL --- */
@@ -105,23 +79,14 @@ Light:		#44366d
 #aboutSkills {}
 #toolBelt {
 	text-align: center;
-	margin: 20px auto 0;
+	margin: 0;
 	color: white;
 }
 #allSkillContainers {
-	padding: 30px 30px 30px 0;
-}
-@media screen and (orientation: portrait) {
-	#allSkillContainers {
-		padding: 0 30px 30px 30px;
-	}
-	#toolBelt {
-		margin: 0 auto 20px;
-	}
+	padding: 30px 0;
 }
 .skillContainer {
 	width: 50%;
-	/*background-color: red;*/
 	float: left;
 	margin: 0 0 10px;
 }
@@ -156,3 +121,76 @@ progress::-moz-progress-bar 	 { background: var(--AboutColLight); }
 progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 
 
+
+/* --- LANDSCAPE NARROW --- */
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+	/* --- BUBBLES PANEL --- */
+	.aboutBubble
+	{
+		height: 15%;
+		padding: 15px;
+	}
+	.aboutBubble h3 { font-size: 1em;}
+	.aboutBubble h4 { font-size: 0.85em;}
+	.aboutBubble h5 { font-size: 0.70em;}
+	#bubbleRingZero {
+		margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding) - 30px);
+	}
+	
+	/* --- SKILLS PANEL --- */
+	.skillContainer {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 971px) and (orientation: landscape) {
+	.aboutBubble {
+		--aboutBubbleFillWidth: calc(100% - var(--aboutBodyPadding) * 2);
+		width:     var(--aboutBubbleFillWidth);
+		max-width: var(--aboutBubbleFillWidth);
+	}
+	#bubbleRingZero {
+		margin-left: 0;
+	}
+}
+/* --- PORTRAIT --- */
+@media screen and (orientation: portrait) {
+	#aboutBody {
+		flex-direction: column;
+		width: calc(100% - 60px);
+	}
+	.halfLargePanel {
+		width: 100%;
+		height: 30vh;
+		position: relative;
+		top: 0;
+	}
+	#aboutBubbles {
+		height: 30vh;
+	}
+	#aboutSkills {
+		margin-top: 30px;
+		height: auto;
+	}
+	
+	/* --- BUBBLES PANEL --- */
+	#bubbleRingZero {
+		margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding));
+	}
+}
+/* --- LANDSCAPE NARROW OR PORTRAIT--- */
+@media screen and (orientation: portrait), screen and (max-width: 1200px) and (orientation: landscape) {
+	.aboutBubble
+	{
+		height: 125px;
+		padding: 15px;
+	}
+	.aboutBubble h3, .aboutBubble h4, .aboutBubble h5 {
+		margin: 12px 0;
+	}
+	#aboutBubbles {
+		height: auto;
+	}
+	.aboutBubble > :first-child {
+		margin-right: calc(var(--aboutBubblePadding) / 2);
+	}
+}
