@@ -22,13 +22,19 @@ Light:		#365b6d
 	background-color: var(--PortfolioColMedium);
 }
 
-
+#portfolio .scrollbox
+{
+	margin: 10px;
+	width: calc(100% - 20px);
+	height: auto;
+	max-height: calc(100vh - 20px);
+}
 #portfolio .scrollbox::-webkit-scrollbar-track {
-	border: 1px solid #224;
+	border: 1px solid var(--PortfolioColDark);
 }
 
 #portfolio .scrollbox::-webkit-scrollbar-thumb {
-	background: #224;  
+	background: var(--PortfolioColDark);  
 }
 
 
