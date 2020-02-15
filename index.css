@@ -108,10 +108,6 @@ h2 {
 	}
 }
 .scrollbox {
-	margin: 10px;
-	width: calc(100% - 20px);
-	height: auto;
-	max-height: calc(100vh - 20px);
 	overflow: auto;
 }
 .scrollbox::-webkit-scrollbar {

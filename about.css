@@ -31,6 +31,16 @@ Light:		#44366d
 	display: block;
 	top: 0;
 }
+#about .scrollbox {
+	
+}
+#about .scrollbox::-webkit-scrollbar-track {
+	border: 1px solid var(--AboutColDark);
+}
+
+#about .scrollbox::-webkit-scrollbar-thumb {
+	background: var(--AboutColDark);  
+}
 
 /* --- BUBBLES PANEL --- */
 
@@ -64,11 +74,12 @@ Light:		#44366d
 	overflow: hidden;
 	flex-grow: 1;
 }
-#bubbleRingZero {
+/*Indent Even Children*/
+.aboutBubble:nth-child(even) {
 	margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding) - var(--aboutBubblePadding) * 2);
 }
-#bubbleUniversity {
-	margin-bottom: 0; 
+.aboutBubble:last-child {
+	margin-bottom: 0;
 }
 .aboutBubble > :first-child {
 	margin-right: var(--aboutBubblePadding);
@@ -76,14 +87,20 @@ Light:		#44366d
 
 /* --- SKILLS PANEL --- */
 
-#aboutSkills {}
+#aboutSkills {
+	display: flex;
+	flex-direction: column;
+	height: calc(100% - 60px);
+}
 #toolBelt {
 	text-align: center;
-	margin: 0;
+	margin: 0 0 30px;
 	color: white;
+	flex: 0 1 auto;
 }
 #allSkillContainers {
-	padding: 30px 0;
+	padding: 0;
+	flex: 1 1 auto;
 }
 .skillContainer {
 	width: 50%;
@@ -91,7 +108,7 @@ Light:		#44366d
 	margin: 0 0 10px;
 }
 .skillContainer img {
-	width: 80px;
+	width: 70px;
 	float: left;
 	position: relative;
 	z-index: 2;
@@ -100,7 +117,7 @@ Light:		#44366d
 	float: left;
 	position: relative;
 	height: 20px;
-	top: 30px;
+	top: 25px;
 	left: -10px;
 	z-index: 1;
 	/* Reset the default appearance */
@@ -133,7 +150,7 @@ progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 	.aboutBubble h3 { font-size: 1em;}
 	.aboutBubble h4 { font-size: 0.85em;}
 	.aboutBubble h5 { font-size: 0.70em;}
-	#bubbleRingZero {
+	.aboutBubble:nth-child(even) {
 		margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding) - 30px);
 	}
 	
@@ -148,7 +165,7 @@ progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 		width:     var(--aboutBubbleFillWidth);
 		max-width: var(--aboutBubbleFillWidth);
 	}
-	#bubbleRingZero {
+	.aboutBubble:nth-child(even) {
 		margin-left: 0;
 	}
 }
@@ -173,7 +190,7 @@ progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 	}
 	
 	/* --- BUBBLES PANEL --- */
-	#bubbleRingZero {
+	.aboutBubble:nth-child(even) {
 		margin-left: calc(100% - var(--aboutBubbleWidth) - var(--aboutBodyPadding));
 	}
 }
