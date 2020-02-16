@@ -101,7 +101,7 @@ Light:		#365b6d
 	margin-left: 10px;
 	min-width: calc(100% - 5px);
 	width:     calc(100% - 5px);
-	font-size: 18px;
+	font-size: 17px;
 }
 .projBox h4 {
 	margin: 5px;
@@ -182,6 +182,7 @@ Light:		#365b6d
 	#portfolio .scrollbox
 	{
 		grid-template-columns: 100%;
+		grid-row-gap: 15px;
 	}	
 }
 @media screen and (orientation: portrait) {
