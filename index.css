@@ -97,7 +97,6 @@ h2 {
 	}
 	.bodyPanel {
 		width: 100%;
-		left: 0px;
 		height: auto;
 	}
 	#fixedNavArrows {
@@ -109,6 +108,7 @@ h2 {
 }
 .scrollbox {
 	overflow: auto;
+	overflow-x: hidden;
 }
 .scrollbox::-webkit-scrollbar {
 	width: 8px;
