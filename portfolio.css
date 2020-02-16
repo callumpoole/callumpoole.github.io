@@ -20,14 +20,20 @@ Light:		#365b6d
 }
 #portfolioBody{
 	background-color: var(--PortfolioColMedium);
+	padding: 30px 30px 30px 30px;
+	height: calc(100vh - 60px);
 }
 
 #portfolio .scrollbox
 {
-	margin: 10px;
-	width: calc(100% - 20px);
+	width: calc(100%);
 	height: auto;
-	max-height: calc(100vh - 20px);
+	max-height: calc(100vh - 60px);
+	display: grid;
+	grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+	grid-template-rows: auto;
+	grid-column-gap: 30px;
+	grid-row-gap: 30px;
 }
 #portfolio .scrollbox::-webkit-scrollbar-track {
 	border: 1px solid var(--PortfolioColDark);
@@ -41,18 +47,20 @@ Light:		#365b6d
 .projBox {
 	color: #DDD;
 	background-color: var(--PortfolioColLight);
-	margin: 10px;
-	position: relative;
 	font-family: "Verdana", serif;
-	width: calc(50% - 20px);
-	float: left;
+	width: 100%;
+	position: relative;
 }
-@media screen and (max-width: 1300px) {
-	.projBox {
-		width: calc(100% - 20px);
-	}
+.dateInCorner {
+	position: absolute;
+	width: auto;
+	background-color: var(--PortfolioColMedium);
+	z-index: 10;
+	padding: 3px 5px;
+	right: 0%;
+	text-align: center;
+	/*border-radius: 0 0 0 10px;*/
 }
-
 .projBox img {
 	float: left;
 	clear: left;
@@ -95,7 +103,6 @@ Light:		#365b6d
 	width:     calc(100% - 5px);
 	font-size: 18px;
 }
-
 .projBox h4 {
 	margin: 5px;
 	margin-left: 10px;
@@ -103,12 +110,8 @@ Light:		#365b6d
 	padding-bottom: 35px;
 }
 @media screen and (max-width: 1300px) {
-	.projBox h2 {
-		font-size: 14px;
-	}
-	.projBox h4 {
-		font-size: 9px;
-	}
+	.projBox h2 { font-size: 14px; }
+	.projBox h4 { font-size: 9px; }
 }
 
 .downloadButtons{
@@ -171,4 +174,19 @@ Light:		#365b6d
 }
 .playVideo:hover {
 	content:url("images/PlayVideoIconFull.png");
+}
+
+@media screen and (max-width: 1300px), 
+       screen and (orientation: portrait)
+{
+	#portfolio .scrollbox
+	{
+		grid-template-columns: 100%;
+	}	
+}
+@media screen and (orientation: portrait) {
+	#portfolioBody{
+		height: auto;
+		width: calc(100% - 60px);
+	}
 }
