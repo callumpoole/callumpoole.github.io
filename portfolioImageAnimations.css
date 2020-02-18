@@ -1,4 +1,45 @@
 
+#Frustum img.cycleAnim{
+  -webkit-animation: FrustumCycle 2.5s infinite; /* Safari 4+ */
+  -moz-animation:    FrustumCycle 2.5s infinite; /* Fx 5+ */
+  -o-animation:      FrustumCycle 2.5s infinite; /* Opera 12+ */
+  animation:         FrustumCycle 2.5s infinite; /* IE 10+, Fx 29+ */
+  animation-play-state: paused;
+}
+#Frustum:hover img.cycleAnim{
+	animation-play-state: running; 
+}
+@-webkit-keyframes FrustumCycle {
+  0%   { content:url("images/Frustum1.jpg");}
+  20%  { content:url("images/Frustum2.jpg");}
+  40%  { content:url("images/Frustum3.jpg");}
+  60%  { content:url("images/Frustum4.jpg");}
+  80%  { content:url("images/Frustum5.jpg");}
+}
+@-moz-keyframes FrustumCycle {
+  0%   { content:url("images/Frustum1.jpg");}
+  20%  { content:url("images/Frustum2.jpg");}
+  40%  { content:url("images/Frustum3.jpg");}
+  60%  { content:url("images/Frustum4.jpg");}
+  80%  { content:url("images/Frustum5.jpg");}
+}
+@-o-keyframes FrustumCycle {
+  0%   { content:url("images/Frustum1.jpg");}
+  20%  { content:url("images/Frustum2.jpg");}
+  40%  { content:url("images/Frustum3.jpg");}
+  60%  { content:url("images/Frustum4.jpg");}
+  80%  { content:url("images/Frustum5.jpg");}
+}
+@keyframes FrustumCycle {
+  0%   { content:url("images/Frustum1.jpg");}
+  20%  { content:url("images/Frustum2.jpg");}
+  40%  { content:url("images/Frustum3.jpg");}
+  60%  { content:url("images/Frustum4.jpg");}
+  80%  { content:url("images/Frustum5.jpg");}
+}
+
+
+
 #Village img.cycleAnim{
   -webkit-animation: VillageCycle 2.5s infinite; /* Safari 4+ */
   -moz-animation:    VillageCycle 2.5s infinite; /* Fx 5+ */
