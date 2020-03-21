@@ -99,8 +99,8 @@ Light:		#365b6d
 .projBox h2 {
 	margin: 5px;
 	margin-left: 10px;
-	min-width: calc(100% - 5px);
-	width:     calc(100% - 5px);
+	min-width: calc(100% - 70px);
+	width:     calc(100% - 70px);
 	font-size: 17px;
 }
 .projBox h4 {
