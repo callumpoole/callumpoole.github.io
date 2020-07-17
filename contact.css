@@ -57,25 +57,19 @@ Light:		#366d4d
 
 
 
-
-.contactWebsiteLogos {
-	width: 75px;
-	height: 75px;
-	margin-right: 20px;
-}
-
-.hrBars {
-	width: 100px;
-	display: inline-block;
-	margin: 36px 10px;
-}
-
-
-
 #SocialBox{
 	margin: 50px auto;
 	width: 510px;
+	display: flex;
+	justify-content: space-around;
 }
+.contactWebsiteLogos {
+	width: 75px;
+	height: 75px;
+	
+}
+
+
 
 @media screen and (orientation: portrait) {
 	/*)
