@@ -74,77 +74,10 @@
 <h2 id="toolBelt">- My Tool Belt -</h2>
 
 <div class="scrollbox" id="allSkillContainers">
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/UE4.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/Unity.png"/>
-<progress value="0.70"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/CPP.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/CSharp.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/Git.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/SVN.png"/>
-<progress value="0.40"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/opengl.png"/>
-<progress value="0.3"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/visualStudio.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/html_css.png"/>
-<progress value="0.30"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/js_alt.png"/>
-<progress value="0.20"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/blender.png"/>
-<progress value="0.20"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/photoshop.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/excel.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/RegEx.png"/>
-<progress value="0.40"></progress>
-</div>
-
+	<div class="skillContainer clearfix" v-for="skill in skills">
+		<img v-bind:src="skill.img"/>
+		<progress v-bind:value="skill.value"></progress>
+	</div>
 </div> <!-- END allSkillContainers -->
 
 </aside> <!-- END right side -->
@@ -381,4 +314,10 @@
 
 
 </body>
+
+<!--<script src="https://unpkg.com/vue@next"></script>-->
+<script src="https://unpkg.com/vue@next/dist/vue.global.js"></script>
+<!--<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.prod.js"></script>-->
+<script type="text/javascript" src="js/index.js"></script>
+
 </html>
