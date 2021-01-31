@@ -1,0 +1,22 @@
+{
+  "name": "callum_poole_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callumpoole/CallumPooleWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/callumpoole/CallumPooleWebsite/issues"
+  },
+  "homepage": "https://github.com/callumpoole/CallumPooleWebsite#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

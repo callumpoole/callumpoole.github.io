@@ -12,9 +12,6 @@ Light:		#365b6d
 }
 
  /* Portfolio */
-#portfolio {
-	
-}
 #portfolioHeader { 
 	background-color: var(--PortfolioColDark);
 }
@@ -66,7 +63,6 @@ Light:		#365b6d
 	clear: left;
 	position: absolute;
 	left: 0;
-	display: inline-block;
 	left: 0;
 	width: 150px;
 	height: 150px;
@@ -173,7 +169,7 @@ Light:		#365b6d
 	z-index: 10;
 }
 .playVideo:hover {
-	content:url("images/PlayVideoIconFull.png");
+	content:url("../images/PlayVideoIconFull.png");
 }
 
 @media screen and (max-width: 1300px), 

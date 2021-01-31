@@ -12,9 +12,7 @@ Light:		#44366d
 	--aboutBodyPadding: 30px;
 }
 
-#about {
-	
-}
+
 #aboutHeader { 
 	background-color: var(--AboutColDark);
 }
@@ -31,9 +29,6 @@ Light:		#44366d
 	position: relative;
 	display: block;
 	top: 0;
-}
-#about .scrollbox {
-	
 }
 #about .scrollbox::-webkit-scrollbar-track {
 	border: 1px solid var(--AboutColDark);
@@ -133,11 +128,7 @@ progress {
   background: var(--AboutColLight);
 }
 progress::progress-value 		 { background: var(--AboutColDark); }
-progress::-moz-progress-value 	 { background: var(--AboutColDark); }
-progress::-webkit-progress-value { background: var(--AboutColDark); }
 progress::progress-bar 			 { background: var(--AboutColLight); }
-progress::-moz-progress-bar 	 { background: var(--AboutColLight); }
-progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 
 
 
