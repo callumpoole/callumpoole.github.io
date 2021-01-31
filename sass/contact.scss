@@ -12,9 +12,6 @@ Light:		#366d4d
 }
 
  /* Contact Me */
-#contact {
-	
-}
 #contactHeader { 
 	background-color: var(--ContactColDark);
 }
@@ -67,17 +64,5 @@ Light:		#366d4d
 	width: 75px;
 	height: 75px;
 	
-}
-
-
-
-@media screen and (orientation: portrait) {
-	/*)
-	#contactContent{
-		top: calc(50vh - 75px);
-		left: 50vw;
-		transform: translate(-50%, -50%) scale(1.5);
-	}
-	*/
 }
 
