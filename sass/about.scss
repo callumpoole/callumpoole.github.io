@@ -127,10 +127,13 @@ progress {
   color: var(--AboutColDark);
   background: var(--AboutColLight);
 }
+
 progress::progress-value 		 { background: var(--AboutColDark); }
+progress::-moz-progress-value 	 { background: var(--AboutColDark); }
+progress::-webkit-progress-value { background: var(--AboutColDark); }
 progress::progress-bar 			 { background: var(--AboutColLight); }
-
-
+progress::-moz-progress-bar 	 { background: var(--AboutColLight); }
+progress::-webkit-progress-bar 	 { background: var(--AboutColLight); }
 
 /* --- LANDSCAPE NARROW --- */
 @media screen and (max-width: 1200px) and (orientation: landscape) {
