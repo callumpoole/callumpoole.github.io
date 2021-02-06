@@ -4,14 +4,14 @@
 <head>
 <title>callumpoole.github.io</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="JQ_SmoothA.js"></script>
-<script src="ScrollArrows.js"></script>
-<link rel="stylesheet" type="text/css" href="index.css">
-<link rel="stylesheet" type="text/css" href="intro.css">
-<link rel="stylesheet" type="text/css" href="about.css">
-<link rel="stylesheet" type="text/css" href="portfolio.css">
-<link rel="stylesheet" type="text/css" href="portfolioImageAnimations.css">
-<link rel="stylesheet" type="text/css" href="contact.css">
+<script src="js/JQ_SmoothA.js"></script>
+<script src="js/ScrollArrows.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.min.css">
+<link rel="stylesheet" type="text/css" href="css/intro.min.css">
+<link rel="stylesheet" type="text/css" href="css/about.min.css">
+<link rel="stylesheet" type="text/css" href="css/portfolio.min.css">
+<link rel="stylesheet" type="text/css" href="css/portfolioImageAnimations.min.css">
+<link rel="stylesheet" type="text/css" href="css/contact.min.css">
 </head>
 <body> 
 
@@ -74,77 +74,10 @@
 <h2 id="toolBelt">- My Tool Belt -</h2>
 
 <div class="scrollbox" id="allSkillContainers">
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/UE4.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/Unity.png"/>
-<progress value="0.70"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/CPP.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/CSharp.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/Git.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/SVN.png"/>
-<progress value="0.40"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/opengl.png"/>
-<progress value="0.3"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/visualStudio.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/html_css.png"/>
-<progress value="0.30"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/js_alt.png"/>
-<progress value="0.20"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/blender.png"/>
-<progress value="0.20"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/photoshop.png"/>
-<progress value="0.50"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/excel.png"/>
-<progress value="0.60"></progress>
-</div>
-
-<div class="skillContainer clearfix">
-<img src="images/Skills/RegEx.png"/>
-<progress value="0.40"></progress>
-</div>
-
+	<div class="skillContainer clearfix" v-for="skill in skills">
+		<img v-bind:src="skill.img"/>
+		<progress v-bind:value="skill.value"></progress>
+	</div>
 </div> <!-- END allSkillContainers -->
 
 </aside> <!-- END right side -->
@@ -164,7 +97,7 @@
 <div class="scrollbox">
 
 <div id="Frustum" class="projBox clearfix">
-<div class="dateInCorner">Early Development</div>
+<div class="dateInCorner">Prototype</div>
 <div id="imageBackdrop"></div>
 <a href="https://youtu.be/bEsrKK-ydw0" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
 <img class="cycleAnim" src="images/Frustum1.jpg"/>
@@ -191,21 +124,13 @@
 	All assets were created by myself with 3dsMax.
 	</h4>
 	<div class="downloadButtons font16">
-	    <a href="DownloadableFiles/ProcedurallyGeneratedMedievalTownWeb/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Web</p></div></a>
+	    <a href="downloadables/ProceduralWebBuild/index.html" target="_blank">
+		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
 		<div class="dbBar"></div>
-		<a href="https://goo.gl/PjPVDE" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Win</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://goo.gl/k2CNR7" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Mac</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://goo.gl/b64iXy" target="_blank">
-		<div class="downloadButton dbH"><p>Linux</p></div></a>
 		<a href="https://github.com/callumpoole/2017-Procedurally-Generated-Medieval-World-Unity-" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><div class="dbDP">GitHub</div></div></a>
+		<div class="downloadButton mr0 dbH"><p>GitHub</p></div></a>
 		<div class="dbBar"></div>
-		<a href="DownloadableFiles/ProcedurallyDevLog.pdf" target="_blank"> 
+		<a href="downloadables/ProcedurallyDevLog.pdf" target="_blank"> 
 		<div class="downloadButton dbH"><p>DevLog</p></div></a>
 	</div>
 </div> 
@@ -223,19 +148,11 @@
 	Project. Further Details in README.txt, for literally ALL the of details, see Dissertation!
 	</h4>
 	<div class="downloadButtons"> 
-	    <a href="DownloadableFiles/WaterManagementGameWeb/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Web</p></div></a>
+	    <a href="downloadables/WaterManagementWebBuild/index.html" target="_blank">
+		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
 		<div class="dbBar"></div>
-		<a href="https://goo.gl/WVQEZn" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Win</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://goo.gl/juVE5K" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Mac</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://goo.gl/XTYTNS" target="_blank">
-		<div class="downloadButton dbH"><p>Linux</p></div></a>
-        <a href="DownloadableFiles/Dissertation.pdf" target="_blank"> 
-		<div class="downloadButton dbH"><p>Dissertation</p></div></a>
+        <a href="downloadables/Dissertation.pdf" target="_blank"> 
+		<div class="downloadButton mr0 dbH"><p>Dissertation</p></div></a>
 	</div>
 </div> 
 </div>
@@ -249,8 +166,8 @@
 	<h2>Pinball (C++ && PhysX)</h2>
 	<h4>[University Project] A small simple Pinball game created with C++ with PhysX and minimal OpenGL rendering.</h4>
 	<div class="downloadButtons">
-	    <a href="DownloadableFiles/PinballCallumPoole.exe" target="_blank"> 
-		<div class="downloadButton dbH"><p>Win</p></div></a>
+		<a href="https://bit.ly/2N6g6Kw" target="_blank"> 
+		<div class="downloadButton dbH"><p>Download .exe</p></div></a>
 	</div>
 </div> 
 </div>
@@ -267,8 +184,9 @@
 	audio assets sourced from original game.
 	</h4>
 	<div class="downloadButtons">
-	    <a href="DownloadableFiles/PacmanGame.zip" target="_blank"> 
-		<div class="downloadButton dbH"><p>Win</p></div></a>
+	    <a href="https://bit.ly/3cI6qkq" target="_blank"> 
+		<div class="downloadButton mr0 dbH"><p>Download .exe</p></div></a>
+		<div class="dbBar"></div>
 		<a href="https://github.com/callumpoole/2016-Pacman-Replica" target="_blank"> 
 		<div class="downloadButton dbH"><p>GitHub</p></div></a>
 	</div>
@@ -288,11 +206,8 @@
 	[Project is not included as code is trivial due to this being a game design task, rather than a programming task.]
 	</h4>	
 	<div class="downloadButtons"> 
-		<a href="DownloadableFiles/SwitchWebGL/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Web</p></div></a>
-		<div class="dbBar"></div>
-		<a href="DownloadableFiles/Switch_Android.apk" target="_blank">
-		<div class="downloadButton dbH"><div class="dbDP">Android (development-mode)</div></div></a>
+		<a href="downloadables/SwitchWebBuild/index.html" target="_blank">
+		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
 	</div>
 </div> 
 </div>
@@ -309,8 +224,9 @@
 	3 Viewing angles available in-game, winner is first to 5!
 	</h4>
 	<div class="downloadButtons">
-	    <a href="DownloadableFiles/3dPongGame.zip" target="_blank"> 
-		<div class="downloadButton dbH"><p>Win</p></div></a>
+	    <a href="https://bit.ly/2YPuGJh" target="_blank"> 
+		<div class="downloadButton mr0 dbH"><p>Download .exe</p></div></a>
+		<div class="dbBar"></div>
 		<a href="https://github.com/callumpoole/2015-3D-Pong" target="_blank"> 
 		<div class="downloadButton dbH"><p>GitHub</p></div></a>
 	</div>
@@ -329,11 +245,8 @@
 	Tap to jump, hold to fluctuate power, only 4 levels.
 	</h4>
 	<div class="downloadButtons">
-	    <a href="DownloadableFiles/StationeryJumpGame.zip" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Win</p></div></a>
-		<div class="dbBar"></div>
-		<a href="DownloadableFiles/StationeryJump.apk" target="_blank"> 
-		<div class="downloadButton dbH"><p>Android (development-mode)</p></div></a>
+	    <a href="downloadables/StationeryJumpWebBuild/index.html" target="_blank"> 
+		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
 	</div>
 </div> 
 </div>
@@ -379,6 +292,11 @@
 </aside>
 </section>
 
-
 </body>
+
+<!--<script src="https://unpkg.com/vue@next"></script>-->
+<script src="https://unpkg.com/vue@next/dist/vue.global.prod.js"></script>
+<!--<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.prod.js"></script>-->
+<script type="text/javascript" src="js/index.js"></script>
+
 </html>
