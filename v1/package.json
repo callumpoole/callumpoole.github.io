@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/callumpoole/CallumPooleWebsite#readme",
   "dependencies": {
-    "node-sass": "^5.0.0",
+    "node-sass": "^9.0.0",
     "vue": "^3.0.5"
   }
 }
