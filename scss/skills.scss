@@ -1,0 +1,49 @@
+@use "variables";
+
+#skills-outer-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#skills-outer-flex > div {
+    background-color: var(--colorA);
+    color: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    width: calc(25% - 55px);
+}
+
+#skills-outer-flex h3 {
+    margin: 0 0 10px;
+}
+
+#skills-outer-flex ul {
+    padding: 0;
+    margin: 0;
+}
+
+#skills-outer-flex li {
+    list-style-type: none;
+}
+
+@media (max-width: variables.$screen-md-max) { 
+    #skills-outer-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #skills-outer-flex > div {
+        width: calc(50% - 45px);
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: variables.$screen-xs-max) { 
+    #skills-outer-flex {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #skills-outer-flex > div {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}

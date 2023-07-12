@@ -1,0 +1,198 @@
+/*
+Colours:
+Dark:    	#1b2433
+Medium:		#1a3f52
+Light:		#365b6d
+*/
+:root {
+  --PortfolioColDark: #1b2433;
+  --PortfolioColMedium: #1a3f52;
+  --PortfolioColLight: #365b6d;
+}
+
+/* Portfolio */
+#portfolioHeader {
+  background-color: var(--PortfolioColDark);
+}
+
+#portfolioBody {
+  background-color: var(--PortfolioColMedium);
+  padding: 30px 30px 30px 30px;
+  height: calc(100vh - 60px);
+}
+
+#portfolio .scrollbox {
+  width: calc(100%);
+  height: auto;
+  max-height: calc(100vh - 60px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: calc(50% - 7.5px) calc(50% - 7.5px);
+      grid-template-columns: calc(50% - 7.5px) calc(50% - 7.5px);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+#portfolio .scrollbox::-webkit-scrollbar-track {
+  border: 1px solid var(--PortfolioColDark);
+}
+
+#portfolio .scrollbox::-webkit-scrollbar-thumb {
+  background: var(--PortfolioColDark);
+}
+
+.projBox {
+  color: #DDD;
+  background-color: var(--PortfolioColLight);
+  font-family: "Verdana", serif;
+  width: 100%;
+  position: relative;
+}
+
+.dateInCorner {
+  position: absolute;
+  width: auto;
+  background-color: var(--PortfolioColMedium);
+  z-index: 10;
+  padding: 3px 5px;
+  right: 0%;
+  text-align: center;
+  /*border-radius: 0 0 0 10px;*/
+}
+
+.projBox img {
+  float: left;
+  clear: left;
+  position: absolute;
+  left: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  opacity: .99;
+}
+
+.cycleAnim {
+  z-index: 5;
+}
+
+#imageBackdrop {
+  min-width: 150px;
+  max-width: 150px;
+  width: 150px;
+  min-height: 150px;
+  height: 100%;
+  background-color: var(--PortfolioColDark);
+  position: absolute;
+  z-index: 0;
+}
+
+.projText {
+  float: left;
+  width: calc(100% - 150px);
+  left: 150px;
+  position: relative;
+  min-height: 150px;
+}
+
+.projBox h2 {
+  margin: 5px;
+  margin-left: 10px;
+  min-width: calc(100% - 70px);
+  width: calc(100% - 70px);
+  font-size: 17px;
+}
+
+.projBox h4 {
+  margin: 5px;
+  margin-left: 10px;
+  font-size: 10px;
+  padding-bottom: 35px;
+}
+
+@media screen and (max-width: 1300px) {
+  .projBox h2 {
+    font-size: 14px;
+  }
+  .projBox h4 {
+    font-size: 9px;
+  }
+}
+
+.downloadButtons {
+  position: absolute;
+  top: auto;
+  left: 10px;
+  bottom: 10px;
+  right: auto;
+}
+
+.downloadButton {
+  display: block;
+  color: white;
+  width: auto;
+  height: 25px;
+  padding: 0 10px;
+  background-color: var(--PortfolioColMedium);
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  /*border-radius: 10px;*/
+}
+
+.mr0 {
+  margin-right: 0px;
+}
+
+.dbH:hover {
+  background-color: var(--PortfolioColDark);
+}
+
+.dbBar {
+  height: 25px;
+  width: 1px;
+  background-color: var(--PortfolioColDark);
+  position: relative;
+  float: left;
+  margin-top: 10px;
+}
+
+.downloadButton p {
+  margin: 0;
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.font8 {
+  font-size: 8px;
+  display: inline;
+}
+
+.playVideo {
+  z-index: 10;
+}
+
+.playVideo:hover {
+  content: url("../images/PlayVideoIconFull.png");
+}
+
+@media screen and (max-width: 1300px), screen and (orientation: portrait) {
+  #portfolio .scrollbox {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    grid-row-gap: 15px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  #portfolioBody {
+    height: auto;
+    width: calc(100% - 60px);
+  }
+}

@@ -1,0 +1,139 @@
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+html, body {
+	max-width: 100%
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+h1 {
+	font-family: "Lucida Console", serif;
+} 
+h2 {
+	color: #DDD;
+	font-family: "Verdana", serif;
+	margin: 10px;
+}
+
+.page_section {
+	left:0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.headerPanel {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	width: 150px; 
+	height: 100vh;
+}
+.bodyPanel {
+	width: calc(100% - 150px);
+	height: 100vh;
+}
+.headerPanel h1{
+	color: white;
+	margin:0;
+	white-space: nowrap;
+	font-size: 50px;
+	z-index: 10;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0) rotateZ(-90deg);
+}
+
+/* NavArrows */
+#fixedNavArrows {
+	position: absolute;
+	top: 100vh;
+	z-index: 100;
+	left: 0;
+}
+#fixedNavArrows h1{
+	font-size: 50px;
+	margin: 0;
+	transform: rotateZ(-90deg);
+	position: relative;
+	left: 40px;
+} 
+#fixedNavArrows h1:nth-child(1) {
+	top: 47px;
+}
+#fixedNavArrows h1:nth-child(2) {
+	top: calc(100vh - 148px);
+}
+#fixedNavArrows h1 a{
+	color: #888;
+	text-decoration:none; 
+	padding: 20px;
+	transition: color 0.1s;
+}
+#fixedNavArrows h1 a:hover{
+	color: white;
+}
+@media screen and (orientation: portrait) {
+	.page_section {
+		flex-direction: column;
+		height: auto;
+	}
+	.headerPanel {
+		width: 100%; 
+		min-height: 150px;
+		max-height: 150px;
+	}
+	.bodyPanel {
+		width: 100%;
+		height: auto;
+	}
+	#fixedNavArrows {
+		visibility: hidden;
+	}
+	.headerPanel h1{
+		transform: translate(-50%, 0);
+	}
+}
+.scrollbox {
+	overflow: auto;
+	overflow-x: hidden;
+}
+.scrollbox::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+/*
+Size Modes:		
+1) 1301 >= w
+2) 501 <= w <= 1300
+*/
+@media screen and (min-width: 1301px) {
+
+}
+@media screen and (max-width: 1300px) {
+
+}
+@media screen and (orientation: landscape) {
+
+}
+@media screen and (orientation: portrait) {
+
+}

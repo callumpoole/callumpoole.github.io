@@ -1,0 +1,40 @@
+
+section#intro {
+    height: 100vh; /*unsupported fallback*/
+    height: 100svh; /*better on mobile, same on desktop*/
+    position: relative;
+    background: var(--colorA);
+}
+
+#intro-text {
+    position: absolute;
+    top: 50%
+}
+
+#intro-hi-im {
+    font-size: clamp(14px,5vw,16px);
+    color: var(--colorD);
+    margin: 0 0 18px;
+}
+#intro-my-name {
+    font-size: clamp(20px, 4vw, 40px);
+    color: var(--white);
+    margin: 0 0 10px;
+    line-height: 0.8;
+}
+#intro-what-I-do {
+    font-size: clamp(10px, 2vw, 20px);
+    color: var(--offWhite);
+    margin: 0 0 10px;
+}
+
+#socialRow a {
+    margin-right: 20px;
+    height: 100%;
+    width: max-content;
+    display: inline-block;
+}
+#socialRow img {
+    display: inline-block;
+    width: 40px;
+}
