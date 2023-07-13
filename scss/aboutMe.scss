@@ -1,0 +1,58 @@
+@use "variables";
+
+#about-me-column {
+    display:grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 20px;
+}
+
+#about-me-column > div {
+    
+}
+#about-me-column > img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+#about-me-column p {
+    font-family: 'Muli',sans-serif;
+    font-size: 1em;
+}
+#about-me-column p:first-child {
+    margin-top: 0;
+}
+#about-me-column p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: variables.$screen-md-max) { 
+    #about-me-column {
+        display:block;
+    }
+    #about-me-column > img {
+        float: right;
+        max-width: 30%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    #about-me-column > div {
+        
+    }
+    #about-me-column p {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: variables.$screen-sm-max) { 
+    #about-me-column > img {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: variables.$screen-xs-max) { 
+    #about-me-column {
+        display:flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}

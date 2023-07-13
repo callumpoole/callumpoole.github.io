@@ -1,302 +1,355 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-<title>callumpoole.github.io</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/JQ_SmoothA.js"></script>
-<script src="js/ScrollArrows.js"></script>
-<link rel="stylesheet" type="text/css" href="css/index.min.css">
-<link rel="stylesheet" type="text/css" href="css/intro.min.css">
-<link rel="stylesheet" type="text/css" href="css/about.min.css">
-<link rel="stylesheet" type="text/css" href="css/portfolio.min.css">
-<link rel="stylesheet" type="text/css" href="css/portfolioImageAnimations.min.css">
-<link rel="stylesheet" type="text/css" href="css/contact.min.css">
+  <meta charset="utf-8">
+  <title>Callum Poole.</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/general.min.css">
+  <link rel="stylesheet" href="css/nav.min.css">
+  <link rel="stylesheet" href="css/intro.min.css">
+  <link rel="stylesheet" href="css/aboutMe.min.css">
+  <link rel="stylesheet" href="css/skills.min.css">
+  <link rel="stylesheet" href="css/projects.min.css">
+  <link rel="stylesheet" href="css/otherProjects.min.css">
+
+  <meta name="theme-color" content="#fafafa">
 </head>
-<body> 
 
-<section id="intro" class="page_section">
-<h1>callumpoole.github.io</h1>
-<div id="mainImg">
-<img src="images/ProfilePic.png"/>
-</div> 
-<div id="linkHolder">
-<a href="#about">ABOUT</a>
-<a href="#portfolio">PORTFOLIO</a>
-<a href="#contact">CONTACT</a>
-</div>
-</section>
+<body id="top">
 
-<div id="fixedNavArrows"> 
-<h1><a id="arrUp" href="#intro">&gt;</a></h1>
-<h1><a id="arrDown" href="#portfolio">&lt;</a></h1>
-</div>
-
-<!--
-	##### ABOUT ME #####
+  <!--
+  <div style="position:absolute; left: 50px; top: 50px; z-index: 9; color:white">>>> V2 is under construction, please click to: <a style="text-decoration: underline;" href="./v1">V1</a>. I left WIP V2 live for quicker phone checking. <<<</div>
 -->
 
-<section id="about" class="page_section">
-<aside class="headerPanel" id="aboutHeader">
-<h1 class="sidePanelText">ABOUT</h1>
-</aside>
-<aside class="bodyPanel" id="aboutBody">
+  <!-- MAIN NAV -->
+  <nav>
+    <div class="outer-gutter">
+      <a class="go-to-top navButton clickableText" href="#top">Callum Poole</a>
+      <ul id="navButtons">
+        <li><a class="navButton clickableText" href="#background">Background</a></li>
+        <li><a class="navButton clickableText" href="#skills">Skills</a></li>
+        <li><a class="navButton clickableText" href="#projects">Projects</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<aside class="halfLargePanel" id="aboutBubbles">
-<div class="aboutBubble" id="bubbleMe">
-	<img src="images/Selfie.jpg"/>
-	<div>
-		<h3>Callum Donald Poole</h3>
-		<h4>British Gameplay Programmer</h4>
-		<!--<h5>TODO Lorem Ipsum Dolar Semet</h5>-->
-	</div>
-</div>
-<div class="aboutBubble" id="bubbleRingZero">
-	<div>
-		<h3>RingZero Game Studio</h3>
-		<h4>Gameplay Programmer</h4>
-		<h5>Feb2018 - Jul2020</h5>
-	</div>
-	<img src="images/RingZero.png"/>
-</div>
-<div class="aboutBubble" id="bubbleUniversity">
-	<img src="images/UoLAlphaInvText.png"/>
-	<div>
-		<h3>University of Lincoln</h3>
-		<h4>Games Computing BSc - 1st (Honours)</h4>
-		<h5>Sep2014 - Aug2017</h5>
-	</div>
-</div>
-</aside>
 
-<aside class="halfLargePanel clearfix" id="aboutSkills">
+  <!-- INTRO -->
+  <section id="intro">
+    <div class="gutter"> 
+      <div id="intro-text">
+        <h1 id="intro-hi-im">Hi, my name is</h1>
+        <h1 id="intro-my-name">Callum Poole.</h1>
+        <h1 id="intro-what-I-do">A Game Developer and Programming Hobbist.</h1>
+        <div id="socialRow">
+          <a href="https://www.linkedin.com/in/callum-poole-617523129/">
+            <div class="icon-box-l icon-box-linkedin-a"><img class="clickableIcon" src="/img/icons/linkedin-a.png"></div>
+          </a>
+          <a href="https://github.com/callumpoole">
+            <div class="icon-box-l icon-box-github-a"><img class="clickableIcon" src="/img/icons/github-a.png"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
-<h2 id="toolBelt">- My Tool Belt -</h2>
+  <!-- START main gutter -->
+  <div class="gutter">
 
-<div class="scrollbox" id="allSkillContainers">
-	<div class="skillContainer clearfix" v-for="skill in skills">
-		<img v-bind:src="skill.img"/>
-		<progress v-bind:value="skill.value"></progress>
-	</div>
-</div> <!-- END allSkillContainers -->
 
-</aside> <!-- END right side -->
+  <!-- ABOUT ME -->
+  <section class="topLevel">
+    <h2 id="background">Background</h2>
+    <div id="about-me-column">
+      <img src="/img/ProfilePic.jpg">
+      <div>
+        <p>
+          Hi, I'm Callum, a passionate game programmer based in Sheffield, UK with a keen eye for detail and a drive to create innovative and captivating gaming experiences. I received a 1st in Games Computing from the University of Lincoln, which laid a strong foundation for my career in the gaming industry.
+        </p>
+        <p>
+          I have had the privilege of working on a variety of games, ranging from puzzle games to shooters to fighting games, and I take pride in my ability to bring complex game mechanics to life. With several years of experience under my belt, I've gained a deep understanding of both the technical and creative aspects of game development.
+        </p>
+        <p>
+          My work has taken me to exciting places around the world. I've worked in Bangkok, Thailand, where I was able to immerse myself in a new culture and gain fresh perspectives on game development. Currently, I'm based in Sheffield, where I continue to create engaging games that leave a lasting impression on players.
+        </p>
+        <p>
+          When I'm not working, you'll find me exploring new programming techniques and delving into the latest games. I'm also passionate about spending time with my loved ones and exploring the great outdoors.
+        </p>
+      </div>
+    </div>
+  </section>
 
-</aside> <!-- END Main, Not Navigation -->
-</section>
 
-<!--
-	##### PORTFOLIO #####
--->
+  <!-- SKILLS -->
+  <section class="topLevel">
+    <h2 id="skills">Skills</h2>
+    
+    <div id="skills-outer-flex">
+      <div>
+        <h3>LANGUAGES</h3>
+        <ul>
+          <li>C++</li>
+          <li>C#</li>
+          <li>Python</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>VBA</li>
+        </ul>
+      </div>
 
-<section id="portfolio" class="page_section">
-<aside class="headerPanel" id="portfolioHeader"> 
-<h1 class="sidePanelText">PORTFOLIO</h1>
-</aside>
-<aside class="bodyPanel" id="portfolioBody">
-<div class="scrollbox">
+      <div>
+        <h3>TECHNOLOGY</h3>
+        <ul>
+          <li>Unreal Engine</li>
+          <li>Unity</li>
+          <li>OpenGL</li>
+          <li>SDL</li>
+          <li>.NET Framework</li>
+          <li>Pandas (Python)</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3>TOOLS</h3>
+        <ul>
+          <li>Perforce</li>
+          <li>Git / GitHub</li>
+          <li>Svn</li>
+          <li>Jira / Azure DevOps</li>
+          <li>Photoshop</li>
+          <li>MS Office</li>
+        </ul>
+      </div>
 
-<div id="Frustum" class="projBox clearfix">
-<div class="dateInCorner">Prototype</div>
-<div id="imageBackdrop"></div>
-<a href="https://youtu.be/bEsrKK-ydw0" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Frustum1.jpg"/>
-<div class="projText">
-	<h2>Battle Frustums (Unreal Engine 4)</h2>
-	<h4>
-	[Home Project] A networked / local multiplayer battle game based around the concept of destructible players.
-	Aimed to be played with friends as a party-like game. It is very early in development and much of what us visible
-	now will change.
-	</h4>
-</div> 
-</div>
+      <div>
+        <h3>KNOWLEDGE</h3>
+        <ul>
+          <li>Mathematics</li>
+          <li>Statistics</li>
+          <li>Design Patterns</li>
+          <li>Best Practices</li>
+          <li>Regex</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<div id="Village" class="projBox clearfix">
-<div class="dateInCorner">2017</div>
-<div id="imageBackdrop"></div>
-<a href="https://www.youtube.com/watch?v=GJVEL2-4DhM" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Medieval1.jpg"/>
-<div class="projText">
-	<h2>Procedurally Generated Medieval World (Unity)</h2>
-	<h4>
-	[University Project] Generates heightmap, mountain, forest and lake with varied biome.
-	Creates a randomly generated walled city at the top of the mountain with varied buildings.
-	All assets were created by myself with 3dsMax.
-	</h4>
-	<div class="downloadButtons font16">
-	    <a href="downloadables/ProceduralWebBuild/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://github.com/callumpoole/2017-Procedurally-Generated-Medieval-World-Unity-" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>GitHub</p></div></a>
-		<div class="dbBar"></div>
-		<a href="downloadables/ProcedurallyDevLog.pdf" target="_blank"> 
-		<div class="downloadButton dbH"><p>DevLog</p></div></a>
-	</div>
-</div> 
-</div>
 
-<div id="WaterManagement" class="projBox clearfix">
-<div class="dateInCorner">2017</div>
-<div id="imageBackdrop"></div>
-<a href="https://youtu.be/IjAqlcVP8T4" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/WaterManagement1.jpg"/>
-<div class="projText">
-	<h2>Water Management Game (Unity)</h2>
-	<h4>
-	[University Project] A CMS game about collecting, purifying and distributing water that I created as part of my 3rd Year Dissertation 
-	Project. Further Details in README.txt, for literally ALL the of details, see Dissertation!
-	</h4>
-	<div class="downloadButtons"> 
-	    <a href="downloadables/WaterManagementWebBuild/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
-		<div class="dbBar"></div>
-        <a href="downloadables/Dissertation.pdf" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Dissertation</p></div></a>
-	</div>
-</div> 
-</div>
+  <!-- MAIN PROJECTS -->
+  <section class="topLevel">
+    <h2 id="projects">Featured Projects</h2>
 
-<div id="Pinball" class="projBox clearfix">
-<div class="dateInCorner">2017</div>
-<div id="imageBackdrop"></div>
-<a href="https://youtu.be/1OzPDsKvoFM" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Pinball1.jpg"/>
-<div class="projText">
-	<h2>Pinball (C++ && PhysX)</h2>
-	<h4>[University Project] A small simple Pinball game created with C++ with PhysX and minimal OpenGL rendering.</h4>
-	<div class="downloadButtons">
-		<a href="https://bit.ly/2N6g6Kw" target="_blank"> 
-		<div class="downloadButton dbH"><p>Download .exe</p></div></a>
-	</div>
-</div> 
-</div>
+    <div class="single-project">
+      <div>
+        <img class="project-left" src="/img/ProcedurallyGeneratedTown.png"/>
+        <aside class="project-right">
+          <h3>Procedurally Generated Medieval World (2017)</h3>
+          <p>
+            A procedural world generator created in Unity with extensive use of perlin noise to create a medieval themed world based on the parameters specified within the project. It includes a castle & quaint village within the castle walls, a forest, some farmland and a lake with a boat on top. Terrain features like the hill and the flattening of farmland were created using a brush system inspired by Photoshop which is applied programmically. All assets were created by myself (I'm not an artist!). University Project.
+          </p>
+          <ul class="project-tech-list">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+          <div class="single-project-filler"></div>
+          <div class="link-icons link-icons-m">
+            <a class="play-in-browser" href="/downloadables/ProceduralWebBuild/index.html">PLAY</a>
+            <a href="/downloadables/ProcedurallyDevLog.pdf"><div class="icon-box-m icon-box-document"><img class="clickableIcon" src="/img/icons/document.png"></div></a>
+            <a href="https://github.com/callumpoole/2017-Procedurally-Generated-Medieval-World-Unity-"><div class="icon-box-m icon-box-github-a"><img class="clickableIcon" src="/img/icons/github-a.png"></div></a>
+            <a href="https://youtu.be/GJVEL2-4DhM"><div class="icon-box-m icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </aside>
+      </div>
+    </div>
 
-<div id="Pacman" class="projBox clearfix">
-<div class="dateInCorner">2016</div>
-<div id="imageBackdrop"></div>
-<a href="https://youtu.be/QMb3PZfZHEM" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Pacman1.jpg"/>
-<div class="projText">
-	<h2>Pacman (C++ && SDL)</h2>
-	<h4>
-	[University Project] A 2-player Pacman replica made with C++ and SDL. All artwork created by myself with Photoshop, 
-	audio assets sourced from original game.
-	</h4>
-	<div class="downloadButtons">
-	    <a href="https://bit.ly/3cI6qkq" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Download .exe</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://github.com/callumpoole/2016-Pacman-Replica" target="_blank"> 
-		<div class="downloadButton dbH"><p>GitHub</p></div></a>
-	</div>
-</div> 
-</div>
+    <div class="single-project">
+      <div>
+        <img class="project-right" src="/img/Switch.png"/>
+        <aside class="project-left">
+          <h3>Switch (2016)</h3>
+          <p>
+            A co-op puzzle game based on the theme of boolean logic with a focus on game design. The game can either be played solo, controlling one character in each hand or as a two-player game. It includes 6 levels with various mechanics like: pressure plates, levers, moving platforms, passing 'activation' balls, and more! University Project.
+          </p>
+          <ul class="project-tech-list">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+          <div class="single-project-filler"></div>
+          <div class="link-icons link-icons-m">
+            <a class="play-in-browser" href="/downloadables/SwitchWebBuild/index.html">PLAY</a>
+            <a href="https://youtu.be/fg_zOrAizWo"><div class="icon-box-m icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </aside>
+      </div>
+    </div>
 
-<div id="Switch" class="projBox clearfix">
-<div class="dateInCorner">2016</div>
-<div id="imageBackdrop"></div>
-<a href="https://www.youtube.com/watch?v=fg_zOrAizWo" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Switch1.png"/>
-<div class="projText">
-	<h2>Switch - Puzzle Game (Unity)</h2>
-	<h4>
-	[University Project] A 1-2 player 3D puzzle Unity game with 2 in-game characters (one player can control both). 
-	Puzzle game that promotes teamwork to solve the problems and complete the level.
-	[Project is not included as code is trivial due to this being a game design task, rather than a programming task.]
-	</h4>	
-	<div class="downloadButtons"> 
-		<a href="downloadables/SwitchWebBuild/index.html" target="_blank">
-		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
-	</div>
-</div> 
-</div>
+    <div class="single-project">
+      <div>
+        <img class="project-left" src="/img/Pacman.png"/>
+        <aside class="project-right">
+          <h3>Pacman Replica (2016)</h3>
+          <p>
+            A replica of the iconic 80's game: Pacman, made with SDL and C++. The game includes: Pacman, optional MsPacman, all 4 ghosts, small dots, big dots, fruit, input remapping & volume controls. All art created by myself (I'm not an artist!). University Project.
+          </p>
+          <ul class="project-tech-list">
+            <li>SDL</li>
+            <li>C++</li>
+          </ul>
+          <div class="single-project-filler"></div>
+          <div class="link-icons link-icons-m">
+            <a href="https://bit.ly/3cI6qkq"><div class="icon-box-m icon-box-exe"><img class="clickableIcon" src="/img/icons/exe.png"></div></a>
+            <a href="https://github.com/callumpoole/2016-Pacman-Replica"><div class="icon-box-m icon-box-github-a"><img class="clickableIcon" src="/img/icons/github-a.png"></div></a>
+            <a href="https://youtu.be/QMb3PZfZHEM"><div class="icon-box-m icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </aside>
+      </div>
+    </div>
 
-<div id="Pong" class="projBox clearfix">
-<div class="dateInCorner">2015</div>
-<div id="imageBackdrop"></div>
-<a href="https://www.youtube.com/watch?v=FsawjaVOlcc" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Pong1.jpg"/>
-<div class="projText">
-	<h2>3D Pong (C++ && OpenGL)</h2>
-	<h4>
-	[University Project] A 3-Dimensional Pong for 1 or 2 players created with C++ and OpenGL. 
-	3 Viewing angles available in-game, winner is first to 5!
-	</h4>
-	<div class="downloadButtons">
-	    <a href="https://bit.ly/2YPuGJh" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Download .exe</p></div></a>
-		<div class="dbBar"></div>
-		<a href="https://github.com/callumpoole/2015-3D-Pong" target="_blank"> 
-		<div class="downloadButton dbH"><p>GitHub</p></div></a>
-	</div>
-</div> 
-</div>
+    <div class="single-project">
+      <div>
+        <img class="project-right" src="/img/StationeryJump.png"/>
+        <aside class="project-left">
+          <h3>Stationery Jump (2014)</h3>
+          <p>
+            A one-button platformer game whereby the player can vary angle and velocity before launching themselves in that direction, grabbing onto any surface including walls and ceiling. The game includes: 4 levels, a start/checkpoint/exit, various dangerous obstacles, a basic main menu / settings.  University Project.
+          </p>
+          <ul class="project-tech-list">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+          <div class="single-project-filler"></div>
+          <div class="link-icons link-icons-m">
+            <a class="play-in-browser" href="/downloadables/StationeryJumpWebBuild/index.html">PLAY</a>
+            <a href="https://youtu.be/h9fa97EDfOc"><div class="icon-box-m icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </aside>
+      </div>
+    </div>
 
-<div id="StationeryJump" class="projBox clearfix">
-<div class="dateInCorner">2014</div>
-<div id="imageBackdrop"></div>
-<a href="https://www.youtube.com/watch?v=h9fa97EDfOc" target="_blank"><img class="playVideo" src="images/PlayVideoIconFaded.png"/></a>
-<img class="cycleAnim" src="images/Stationery1.png"/>
-<div class="projText">
-	<h2>Stationery Jump (Unity)</h2>
-	<h4>
-	[University Project] One button game platformer themed around stationery. 
-	Tap to jump, hold to fluctuate power, only 4 levels.
-	</h4>
-	<div class="downloadButtons">
-	    <a href="downloadables/StationeryJumpWebBuild/index.html" target="_blank"> 
-		<div class="downloadButton mr0 dbH"><p>Play in Browser</p></div></a>
-	</div>
-</div> 
-</div>
+  </section>
 
-</div> <!-- END SCROLL BOX-->
-</aside>
-</section>
 
-<!--
-	##### CONTACT ME #####
--->
+  <!-- OTHER PROJECTS -->
+  <section class="topLevel">
+    <h2 id="otherProjects">Other Projects</h2>
 
-<section id="contact" class="page_section">
-<aside class="headerPanel" id="contactHeader"> 
-<h1 class="sidePanelText">CONTACT</h1>
-</aside>
-<aside class="bodyPanel" id="contactBody">
+    <div id="otherProjectsGrid">
 
-<div id="contactContent">
-<h1>Callum Poole</h1>
-<h2>Programmer & Game Developer</h2>
+      <div class="single-other-project">
+        <img src="/img/Frustum.png"/>
+        <div class="single-other-project-padding">
+          <h3>Battle Frustums (2020)</h3>
+          <p>A prototype game featuring first person melee and ranged combat allowing local-play and network-play simulaneously. I created this prototype to explore different game design possibilities around the theme of descructible players.</p>
+          <ul class="project-tech-list">
+            <li>Unreal</li>
+            <li>C++</li>
+          </ul>
+          <div class="link-icons link-icons-s">
+            <a href="https://youtu.be/bEsrKK-ydw0"><div class="icon-box-s icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </div>
+      </div>
 
-<table>
-  <tr>
-    <td>Residence: </td>
-    <td>Sheffield, UK</td> 
-  </tr>
-  <tr>
-    <td>Email: </td> 
-    <td>contact@callumpoole.com</td>
-  </tr>
-</table>
+      <div class="single-other-project">
+        <img src="/img/WaterManagementGame.png"/>
+        <div class="single-other-project-padding">
+          <h3>Water Management Game (2017)</h3>
+          <p>A resource management game focused around collecting, purifying, storing and distributing water. Created as my final year dissertation project, the focus was more on the physics and purification of water flow and distribution rather than aesthetics, hence why everything is untextured. University Project.</p>
+          <ul class="project-tech-list">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+          <div class="link-icons link-icons-s">
+            <a class="play-in-browser" href="/downloadables/WaterManagementWebBuild/index.html">PLAY</a>
+            <a href="/downloadables/Dissertation.pdf"><div class="icon-box-s icon-box-document"><img class="clickableIcon" src="/img/icons/document.png"></div></a>
+            <a href="https://youtu.be/IjAqlcVP8T4"><div class="icon-box-s icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </div>
+      </div>
 
-<div id="SocialBox">
-<a href="https://www.linkedin.com/in/callum-poole-617523129/">
-<img class="contactWebsiteLogos" src="images/linkedinLogoWhite.png"/></a>
-<a href="https://github.com/callumpoole">
-<img class="contactWebsiteLogos" src="images/githubLogoWhite.png"/></a>
-</div>
+      <div class="single-other-project">
+        <img src="/img/Pinball.png"/>
+        <div class="single-other-project-padding">
+          <h3>Pinball (2017)</h3>
+          <p>A pinball simulation to demonstrate PhysX. The game includes: 3 paddles, a plunger, a live counting syste and various bit and bobs to earn points. University Project.</p>
+          <ul class="project-tech-list">
+            <li>OpenGL</li>
+            <li>PhysX</li>
+            <li>C++</li>
+          </ul>
+          <div class="link-icons link-icons-s">
+            <a href="https://bit.ly/2N6g6Kw"><div class="icon-box-s icon-box-exe"><img class="clickableIcon" src="/img/icons/exe.png"></div></a>
+            <a href="https://youtu.be/1OzPDsKvoFM"><div class="icon-box-s icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </div>
+      </div>
 
-</div>
+      <div class="single-other-project">
+        <img src="/img/3DPong.png"/>
+        <div class="single-other-project-padding">
+          <h3>3d Pong (2015)</h3>
+          <p>A Pong replica used to demonstrate OpenGL usage. Can be played with two-players, first get to 5 points wins, can be viewed from 3 perspectives: side-on, top-down and rabbit view. University Project.</p>
+          <ul class="project-tech-list">
+            <li>OpenGL</li>
+            <li>C++</li>
+          </ul>
+          <div class="link-icons link-icons-s">
+            <a href="https://bit.ly/2YPuGJh"><div class="icon-box-s icon-box-exe"><img class="clickableIcon" src="/img/icons/exe.png"></div></a>
+            <a href="https://github.com/callumpoole/2015-3D-Pong"><div class="icon-box-s icon-box-github-a"><img class="clickableIcon" src="/img/icons/github-a.png"></div></a>
+            <a href="https://youtu.be/FsawjaVOlcc"><div class="icon-box-s icon-box-youtube"><img class="clickableIcon" src="/img/icons/youtube.png"></div></a>
+          </div>
+        </div>
+      </div>
 
-</aside>
-</section>
+    </div>
+  </section>
 
+
+  <!-- END main gutter -->
+  </div>
+
+  <!-- END main gutter -->
+  <footer>
+    <div class="outer-gutter">
+      <!-- https://icons8.com/icon/set/files/ios-filled -->
+      <!-- https://icons8.com/icon/set/social-media/ios-filled -->
+      <a class="clickableText" target="_blank" href="https://icons8.com/icon/123471/document">Document</a>, 
+      <a class="clickableText" target="_blank" href="https://icons8.com/icon/10461/exe">EXE</a>,
+      <a class="clickableText" target="_blank" href="https://icons8.com/icon/8808/linkedin">LinkedIn</a>, 
+      <a class="clickableText" target="_blank" href="https://icons8.com/icon/12599/github">GitHub</a> & 
+      <a class="clickableText" target="_blank" href="https://icons8.com/icon/37326/youtube">YouTube</a>
+      icons by <a class="clickableText" target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+  </footer>
+
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--<script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  -->
 </body>
-
-<!--<script src="https://unpkg.com/vue@next"></script>-->
-<script src="https://unpkg.com/vue@next/dist/vue.global.prod.js"></script>
-<!--<script src="https://unpkg.com/vue@3.0.5/dist/vue.global.prod.js"></script>-->
-<script type="text/javascript" src="js/index.js"></script>
 
 </html>

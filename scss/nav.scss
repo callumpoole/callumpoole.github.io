@@ -1,0 +1,67 @@
+@use "variables";
+
+body > nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top:0;
+    left:0;
+    transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+    background: var(--colorA);
+}
+
+.nav--shadow {
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.4);
+}
+.nav--hidden {
+    transform: translateY(-100%);
+}
+
+.go-to-top {
+    margin: 0;
+    position: absolute;
+    top: -50%; /*just off screen*/
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity ease-in-out 0.2s, top ease-in-out 0.2s;
+    height: 100%;
+    padding: 0 10px;
+}
+.go-to-top:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.go-to-top--visible {
+    opacity: 1;
+    top: 50%;
+    display: block;
+}
+
+#navButtons {
+    padding: 10px 0;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+#navButtons > li {
+    display: inline-block;
+    padding: 0;   
+}
+#navButtons > li > a {
+    padding: 0 5px;
+    display: block;
+}
+
+@media (max-width: variables.$screen-xs-max) { 
+    #navButtons {
+        font-size: 12px;
+    }
+    .go-to-top {
+        font-size: 12px;
+    }
+}
