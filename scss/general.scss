@@ -53,6 +53,10 @@ a {
     }
 }
 
+section.topLevel {
+    margin-bottom: 40px;
+}
+
 section.topLevel > h2 {
     color: var(--colorD);
     text-shadow: 0.5px 0.5px #000;

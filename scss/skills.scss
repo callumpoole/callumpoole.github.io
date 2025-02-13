@@ -46,4 +46,8 @@
         width: 100%;
         padding: 10px 20px;
     }
+    #skills-outer-flex ul {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }

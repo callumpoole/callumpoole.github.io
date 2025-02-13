@@ -25,6 +25,10 @@
   <link rel="stylesheet" href="css/skills.min.css">
   <link rel="stylesheet" href="css/projects.min.css">
   <link rel="stylesheet" href="css/otherProjects.min.css">
+  <link rel="stylesheet" href="css/uePlugins.min.css">
+  <!-- Source: https://swiperjs.com/get-started -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/uePluginsPostSwiper.min.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -42,6 +46,7 @@
       <ul id="navButtons">
         <li><a class="navButton clickableText" href="#background">Background</a></li>
         <li><a class="navButton clickableText" href="#skills">Skills</a></li>
+        <li><a class="navButton clickableText" href="#UE_Plugins">UE Plugins</a></li>
         <li><a class="navButton clickableText" href="#projects">Projects</a></li>
       </ul>
     </div>
@@ -79,16 +84,16 @@
       <img src="/img/ProfilePic.jpg">
       <div>
         <p>
-          Hi, I'm Callum, a passionate game programmer based in Sheffield, UK with a keen eye for detail and a drive to create innovative and captivating gaming experiences. I received a 1st in Games Computing from the University of Lincoln, which laid a strong foundation for my career in the gaming industry.
+          Hi, I'm Callum, a passionate game programmer based in Sheffield, UK. With a keen eye for detail and a drive to create immersive and innovative gaming experiences, I strive to push the boundaries of game development. I earned a First-Class degree in Games Computing from the University of Lincoln, providing me with a strong technical foundation for my career in the gaming industry.
         </p>
         <p>
-          I have had the privilege of working on a variety of games, ranging from puzzle games to shooters to fighting games, and I take pride in my ability to bring complex game mechanics to life. With several years of experience under my belt, I've gained a deep understanding of both the technical and creative aspects of game development.
+          Over the years, I've had the privilege of working on a diverse range of games, from puzzle and shooter titles to fighting games. I take pride in my ability to bring complex mechanics to life, blending technical expertise with creative vision to craft engaging gameplay experiences.
         </p>
         <p>
-          My work has taken me to exciting places around the world. I've worked in Bangkok, Thailand, where I was able to immerse myself in a new culture and gain fresh perspectives on game development. Currently, I'm based in Sheffield, where I continue to create engaging games that leave a lasting impression on players.
+          My work has taken me around the world, including a role in Bangkok, Thailand 🇹🇭, where I immersed myself in a new culture and gained fresh perspectives on game development. Now back in Sheffield, I continue to create games that leave a lasting impact on players.
         </p>
         <p>
-          When I'm not working, you'll find me exploring new programming techniques and delving into the latest games. I'm also passionate about spending time with my loved ones and exploring the great outdoors.
+          When I'm not programming, I'm exploring new development techniques, playing the latest games, or spending time outdoors with family and friends.
         </p>
       </div>
     </div>
@@ -149,6 +154,34 @@
       </div>
     </div>
   </section>
+
+
+ <!-- Unreal Engine Plugins -->
+ <section class="topLevel">
+  <h2 id="UE_Plugins">Unreal Engine Plugins</h2>
+  
+    <div class="slider-container swiper">
+      <div class="card-slider swiper-wrapper">
+          <div class="card swiper-slide" id="AnythingToString"><a href="https://www.fab.com/listings/c266d579-4e7f-43c5-a766-3dcc2196646b" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="ColorUtilities"><a href="https://www.fab.com/listings/0dfcb024-9c3b-483b-ad6a-1cd75afc2f4f" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="ConciseNodes"><a href="https://www.fab.com/listings/24a4419f-f26e-435e-9026-b7b8796d43d3" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="ECF"><a href="https://www.fab.com/listings/38c1b9c7-2157-4981-8c51-4244cd765cac" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="MathOps"><a href="https://www.fab.com/listings/5937f384-b8a5-4e53-9b13-0b1d76953d9e" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="NumericLiterals"><a href="https://www.fab.com/listings/ecde29ce-bfd1-4ef5-9e30-ebf83faa259b" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+          <div class="card swiper-slide" id="WidgetUtilities"><a href="https://www.fab.com/listings/76845c5f-8df8-4132-abe7-1ba955f6381f" target="_blank"><img src="https://static.fab.com/static/builds/web/dist/frontend/assets/images/common/logo/e1e12dc6142410b391ce48e416261ad7-v1.svg"></a></div>
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <!-- <div class="swiper-button-next"></div> -->
+      
+    </div>
+
+
+ </section> 
 
 
   <!-- MAIN PROJECTS -->
@@ -342,6 +375,9 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <!-- Source: https://swiperjs.com/get-started -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper-config.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <!--<script>
