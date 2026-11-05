@@ -90,7 +90,7 @@
 .link-icons-m > a > div,
 .link-icons-m > a > div > img
 {
-    width: var(--social-size-m);
+    width: auto;
     height: var(--social-size-m);
 }
 /* -- ICONS-SMALL -- */
@@ -101,7 +101,7 @@
 .link-icons-s > a > div,
 .link-icons-s > a > div > img
 {
-    width: var(--social-size-s);
+    width: auto;
     height: var(--social-size-s);
 }
 /* -- ICON - PLAY IN BROWSER -- */
@@ -122,6 +122,25 @@
 .link-icons-s > .play-in-browser {
     font-size: 12px;
 }
+
+.tag {
+    border-radius: var(--border-radius);
+    padding: 3px 4px;
+    color: var(--black);
+}
+.tag-small {
+    font-size: 12px;
+}
+.tag-academic {
+    background-color: #34A853;
+}
+.tag-personal {
+    background-color: #4285F4;
+}
+.tag-professional {
+    background-color: #FBBC05;
+}
+
 @media (max-width: variables.$screen-md-max) { 
     .play-in-browser {
         display: none; /*All games so far can't be played on */
@@ -179,11 +198,11 @@
     }
     .single-project .project-tech-list {
         justify-content: flex-start !important;
-        border-radius: 0 0 0 var(--border-radius);
+        border-radius: 0;
         align-items: center;
         display: inline-flex;
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
         align-self: stretch;
@@ -203,15 +222,15 @@
     .single-project .link-icons {
         display: inline-flex;
         background-color: var(--colorA);
-        border-radius: 0 0 var(--border-radius) 0;
-        grid-column-start: 3;
+        border-radius: 0 0 var(--border-radius) var(--border-radius);
+        grid-column-start: 1;
         grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
         align-self: stretch;
         
-        padding: 0 20px 10px 0;
-        justify-content: flex-end !important;
+        padding: 0px 20px 10px 20px;
+        justify-content: flex-start !important;
     }
     .single-project .link-icons a {
         
