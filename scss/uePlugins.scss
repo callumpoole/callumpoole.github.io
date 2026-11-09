@@ -39,10 +39,13 @@
     background-color: #3498db;
 }
 
+.card#AnyVariant        { background-image: url("/img/UEPlugins/AnyVariant.png"); }
 .card#AnythingToString  { background-image: url("/img/UEPlugins/AnythingToString.png"); }
 .card#ColorUtilities    { background-image: url("/img/UEPlugins/ColorUtilities.png"); }
 .card#ConciseNodes      { background-image: url("/img/UEPlugins/ConciseNodes.png"); }
 .card#ECF               { background-image: url("/img/UEPlugins/ECF.png"); }
+.card#ForEachMapSet     { background-image: url("/img/UEPlugins/ForEachMapSet.png"); }
+.card#GraphTheory       { background-image: url("/img/UEPlugins/GraphTheory.png"); }
 .card#MathOps           { background-image: url("/img/UEPlugins/MathOps.png"); }
 .card#NumericLiterals   { background-image: url("/img/UEPlugins/NumericLiterals.png"); }
 .card#WidgetUtilities   { background-image: url("/img/UEPlugins/WidgetUtilities.png"); }
