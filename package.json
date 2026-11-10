@@ -1,10 +1,10 @@
 {
-  "name": " ",
+  "name": "callum-poole-portfolio",
   "version": "0.0.1",
-  "description": "",
-  "keywords": "",
-  "license": "",
-  "author": "",
+  "description": "Personal portfolio site for Callum Poole, game developer.",
+  "keywords": ["portfolio", "game-development", "unreal-engine", "unity"],
+  "license": "MIT",
+  "author": "Callum Poole",
   "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html --open",
