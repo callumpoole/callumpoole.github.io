@@ -39,15 +39,18 @@
 
 @media (max-width: variables.$screen-xs-max) { 
     #skills-outer-flex {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
     }
     #skills-outer-flex > div {
-        width: 100%;
-        padding: 10px 20px;
+        width: auto;
+        padding: 10px;
+    }
+    #skills-outer-flex h3 {
+        font-size: 1em;
     }
     #skills-outer-flex ul {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        font-size: 0.85em;
     }
 }
