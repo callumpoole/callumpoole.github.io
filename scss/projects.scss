@@ -45,7 +45,7 @@
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     padding: 20px 20px 5px 20px;
     margin: 0;
-    font-size: 0.75em;
+    font-size: 0.9rem;
 }
 .project-tech-list {
     background-color: var(--colorA);
@@ -62,7 +62,7 @@
 }
 .project-tech-list li {
     display: inline-block;
-    font-size: 0.7em;
+    font-size: 0.8rem;
     color: var(--colorD);
 }
 
@@ -113,14 +113,14 @@
     padding: 0px 5px;
     display: inline-flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 0.9rem;
 }
 .play-in-browser:hover {
     border: 2px solid var(--colorD);
     color: var(--colorD);
 }
 .link-icons-s > .play-in-browser {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 
 .tag {
@@ -129,7 +129,7 @@
     color: var(--black);
 }
 .tag-small {
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 .tag-academic {
     background-color: #34A853;
@@ -234,14 +234,5 @@
     }
     .single-project .link-icons a {
         
-    }
-}
-
-@media (max-width: variables.$screen-xs-max) { 
-    .single-project aside h3 {
-        font-size: 1em;
-    }
-    .single-project-box p {
-        font-size: 0.65em;
     }
 }
