@@ -3,7 +3,11 @@
     const goToTop = document.querySelector(".go-to-top");
     let lastScrollY = window.scrollY;
 
+    nav.classList.toggle("nav--at-top", window.scrollY === 0);
+
     window.addEventListener("scroll", () => {
+        nav.classList.toggle("nav--at-top", window.scrollY === 0);
+
         if (lastScrollY < window.scrollY) {
             nav.classList.add("nav--hidden");
             nav.classList.remove("nav--shadow");

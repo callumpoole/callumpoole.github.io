@@ -6,8 +6,12 @@ body > nav {
     z-index: 1000;
     top:0;
     left:0;
-    transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s;
+    transition: transform ease-in-out 0.2s, box-shadow ease-in-out 0.2s, background-color ease-in-out 0.2s;
     background: var(--colorA);
+}
+
+body > nav.nav--at-top {
+    background-color: transparent;
 }
 
 .nav--shadow {
