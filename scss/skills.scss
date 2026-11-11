@@ -8,13 +8,13 @@
 #skills-outer-flex > div {
     background-color: var(--colorA);
     color: var(--white);
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: var(--border-radius);
-    width: calc(25% - 55px);
+    width: calc(25% - 3.4375rem);
 }
 
 #skills-outer-flex h3 {
-    margin: 0 0 10px;
+    margin: 0 0 0.625rem;
 }
 
 #skills-outer-flex ul {
@@ -29,11 +29,11 @@
 @media (max-width: variables.$screen-md-max) { 
     #skills-outer-flex {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0.625rem;
     }
     #skills-outer-flex > div {
-        width: calc(50% - 45px);
-        padding: 10px 20px;
+        width: calc(50% - 2.8125rem);
+        padding: 0.625rem 1.25rem;
     }
 }
 
@@ -41,10 +41,10 @@
     #skills-outer-flex {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
+        gap: 0.625rem;
     }
     #skills-outer-flex > div {
         width: auto;
-        padding: 10px;
+        padding: 0.625rem;
     }
 }

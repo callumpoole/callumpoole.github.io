@@ -14,27 +14,27 @@ section#intro {
 #intro-hi-im {
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     color: var(--colorD);
-    margin: 0 0 18px;
+    margin: 0 0 1.125rem;
 }
 #intro-my-name {
     font-size: clamp(2rem, 4vw, 3.5rem);
     color: var(--white);
-    margin: 0 0 10px;
+    margin: 0 0 0.625rem;
     line-height: 1.05;
 }
 #intro-what-I-do {
     font-size: clamp(1.125rem, 2vw, 1.5rem);
     color: var(--offWhite);
-    margin: 0 0 10px;
+    margin: 0 0 0.625rem;
 }
 
 #socialRow a {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     height: 100%;
     width: max-content;
     display: inline-block;
 }
 #socialRow img {
     display: inline-block;
-    width: 40px;
+    width: 2.5rem;
 }
