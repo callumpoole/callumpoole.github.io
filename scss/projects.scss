@@ -142,9 +142,26 @@
     background-color: #FBBC05;
 }
 
-@media (max-width: variables.$screen-md-max) { 
+@media (max-width: variables.$screen-lg-max) {
+    .project-tech-list {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .project-right .project-tech-list {
+        justify-content: flex-start;
+    }
+    .project-tech-list li:nth-last-child(2) {
+        display: none;
+    }
+    .project-tech-list li:last-child {
+        flex-basis: 100%;
+        text-align: left;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
     .play-pc-only {
-        display: none; /*All games so far can't be played on */
+        display: none;
     }
 }
 
@@ -201,7 +218,9 @@
         justify-content: flex-start !important;
         border-radius: 0;
         align-items: center;
-        display: inline-flex;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
