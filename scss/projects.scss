@@ -69,6 +69,7 @@
 /* -- ICONS-GENERAL -- */
 .link-icons {
     display: flex;
+    flex-wrap: wrap;
 }
 .project-right > .link-icons {
     justify-content: flex-end;
@@ -142,7 +143,7 @@
 }
 
 @media (max-width: variables.$screen-md-max) { 
-    .play-in-browser {
+    .play-pc-only {
         display: none; /*All games so far can't be played on */
     }
 }
