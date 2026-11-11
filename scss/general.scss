@@ -27,6 +27,76 @@ html {
     color:var(--offWhite);
     font-family: 'Montserrat';
 }
+
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -3rem;
+    z-index: 1000;
+    padding: 0.75rem 1rem;
+    background: #111827;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+:focus-visible {
+    outline: 3px solid #7cc7ff;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .motion-ready .reveal-item {
+        opacity: 0;
+        transform: translate3d(var(--reveal-x, 0), var(--reveal-y, 8px), 0);
+    }
+
+    .motion-ready .reveal-item.is-visible {
+        transition:
+            opacity 600ms cubic-bezier(0.2, 0.65, 0.3, 1) var(--reveal-delay, 0ms),
+            transform 600ms cubic-bezier(0.2, 0.65, 0.3, 1) var(--reveal-delay, 0ms);
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .reveal--left {
+        --reveal-x: -8px;
+        --reveal-y: 0;
+    }
+
+    .reveal--right {
+        --reveal-x: 8px;
+        --reveal-y: 0;
+    }
+
+    .reveal--up {
+        --reveal-y: 8px;
+    }
+
+    .reveal--background {
+        --reveal-y: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 body {
     background: var(--colorB);
 }

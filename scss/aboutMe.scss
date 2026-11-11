@@ -25,6 +25,12 @@
     margin-bottom: 0;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .motion-ready .background-reveal.is-visible {
+        transition-duration: 1000ms;
+    }
+}
+
 @media (max-width: variables.$screen-md-max) { 
     #about-me-column {
         display:block;

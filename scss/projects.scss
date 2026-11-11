@@ -40,6 +40,28 @@
     font-size: 1.3em;
     text-shadow: 0.5px 0.5px #000;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .single-project > div > .reveal--left {
+        --reveal-x: -12px;
+    }
+
+    .single-project > div > .reveal--right {
+        --reveal-x: 12px;
+    }
+
+    .single-project > div > .reveal-item.is-visible {
+        transition-duration: 1100ms;
+    }
+
+    @media (max-width: 767px) {
+        .single-project > div > .reveal-item {
+            --reveal-x: 0;
+            --reveal-y: 12px;
+        }
+    }
+}
+
 .single-project p {
     background-color: var(--colorA);
     border-radius: var(--border-radius) var(--border-radius) 0 0;
